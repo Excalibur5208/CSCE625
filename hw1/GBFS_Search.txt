@@ -1,0 +1,2386 @@
+vertices=275, edges=641
+start=(1,1), goal=(4,4), vertices: 0 and 62
+iter=1, frontier=0, popped=0 (1,1), depth=0, dist2goal=4.2
+
+ push 1 (1,2)
+
+ push 20 (2,1)
+
+ push 21 (2,2)
+
+iter=2, frontier=2, popped=21 (2,2), depth=1, dist2goal=2.8
+
+ push 22 (2,3)
+
+ push 41 (3,2)
+
+ push 42 (3,3)
+
+iter=3, frontier=4, popped=42 (3,3), depth=2, dist2goal=1.4
+
+ push 43 (3,4)
+
+ push 61 (4,3)
+
+ push 62 (4,4)
+
+-----------------
+ vertex 0 (1,1)
+
+ vertex 21 (2,2)
+
+ vertex 42 (3,3)
+
+ vertex 62 (4,4)
+
+
+search algorithm = GBFS
+total iterations = 3
+max frontier size= 5
+vertices visited = 10/275
+
+path length      = 3
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+vertices=275, edges=641
+start=(1,1), goal=(20,20), vertices: 0 and 274
+iter=1, frontier=0, popped=0 (1,1), depth=0, dist2goal=26.9
+
+ push 1 (1,2)
+
+ push 20 (2,1)
+
+ push 21 (2,2)
+
+iter=2, frontier=2, popped=21 (2,2), depth=1, dist2goal=25.5
+
+ push 22 (2,3)
+
+ push 41 (3,2)
+
+ push 42 (3,3)
+
+iter=3, frontier=4, popped=42 (3,3), depth=2, dist2goal=24.0
+
+ push 43 (3,4)
+
+ push 61 (4,3)
+
+ push 62 (4,4)
+
+iter=4, frontier=6, popped=62 (4,4), depth=3, dist2goal=22.6
+
+ push 63 (4,5)
+
+iter=5, frontier=6, popped=63 (4,5), depth=4, dist2goal=21.9
+
+ push 44 (3,5)
+
+ push 64 (4,6)
+
+iter=6, frontier=7, popped=64 (4,6), depth=5, dist2goal=21.3
+
+ push 45 (3,6)
+
+ push 65 (4,7)
+
+iter=7, frontier=8, popped=65 (4,7), depth=6, dist2goal=20.6
+
+ push 46 (3,7)
+
+ push 66 (4,8)
+
+iter=8, frontier=9, popped=66 (4,8), depth=7, dist2goal=20.0
+
+ push 47 (3,8)
+
+ push 67 (4,9)
+
+ push 78 (5,8)
+
+iter=9, frontier=11, popped=78 (5,8), depth=8, dist2goal=19.2
+
+ push 90 (6,8)
+
+iter=10, frontier=11, popped=90 (6,8), depth=9, dist2goal=18.4
+
+ push 104 (7,8)
+
+iter=11, frontier=11, popped=104 (7,8), depth=10, dist2goal=17.7
+
+ push 103 (7,7)
+
+ push 105 (7,9)
+
+ push 118 (8,8)
+
+ push 119 (8,9)
+
+iter=12, frontier=14, popped=119 (8,9), depth=11, dist2goal=16.3
+
+ push 120 (8,10)
+
+ push 136 (9,9)
+
+ push 137 (9,10)
+
+iter=13, frontier=16, popped=137 (9,10), depth=12, dist2goal=14.9
+
+ push 138 (9,11)
+
+iter=14, frontier=16, popped=138 (9,11), depth=13, dist2goal=14.2
+
+ push 121 (8,11)
+
+ push 139 (9,12)
+
+iter=15, frontier=17, popped=139 (9,12), depth=14, dist2goal=13.6
+
+ push 122 (8,12)
+
+ push 140 (9,13)
+
+iter=16, frontier=18, popped=140 (9,13), depth=15, dist2goal=13.0
+
+ push 123 (8,13)
+
+ push 141 (9,14)
+
+iter=17, frontier=19, popped=141 (9,14), depth=16, dist2goal=12.5
+
+ push 142 (9,15)
+
+iter=18, frontier=19, popped=142 (9,15), depth=17, dist2goal=12.1
+
+ push 124 (8,15)
+
+iter=19, frontier=19, popped=124 (8,15), depth=18, dist2goal=13.0
+
+ push 107 (7,15)
+
+ push 125 (8,16)
+
+iter=20, frontier=20, popped=125 (8,16), depth=19, dist2goal=12.6
+
+ push 108 (7,16)
+
+ push 126 (8,17)
+
+iter=21, frontier=21, popped=126 (8,17), depth=20, dist2goal=12.4
+
+ push 109 (7,17)
+
+ push 127 (8,18)
+
+iter=22, frontier=22, popped=127 (8,18), depth=21, dist2goal=12.2
+
+ push 110 (7,18)
+
+ push 128 (8,19)
+
+ push 143 (9,19)
+
+ push 148 (10,19)
+
+ push 153 (11,19)
+
+iter=23, frontier=26, popped=153 (11,19), depth=22, dist2goal=9.1
+
+ push 154 (11,20)
+
+ push 158 (12,19)
+
+ push 159 (12,20)
+
+iter=24, frontier=28, popped=159 (12,20), depth=23, dist2goal=8.0
+
+ push 172 (13,20)
+
+iter=25, frontier=28, popped=172 (13,20), depth=24, dist2goal=7.0
+
+ push 171 (13,19)
+
+ push 184 (14,20)
+
+iter=26, frontier=29, popped=184 (14,20), depth=25, dist2goal=6.0
+
+ push 183 (14,19)
+
+ push 197 (15,20)
+
+iter=27, frontier=30, popped=197 (15,20), depth=26, dist2goal=5.0
+
+ push 196 (15,19)
+
+ push 210 (16,20)
+
+iter=28, frontier=31, popped=210 (16,20), depth=27, dist2goal=4.0
+
+ push 209 (16,19)
+
+ push 222 (17,20)
+
+iter=29, frontier=32, popped=222 (17,20), depth=28, dist2goal=3.0
+
+ push 221 (17,19)
+
+ push 236 (18,20)
+
+iter=30, frontier=33, popped=236 (18,20), depth=29, dist2goal=2.0
+
+ push 235 (18,19)
+
+ push 254 (19,20)
+
+iter=31, frontier=34, popped=254 (19,20), depth=30, dist2goal=1.0
+
+ push 253 (19,19)
+
+ push 274 (20,20)
+
+-----------------
+ vertex 0 (1,1)
+
+ vertex 21 (2,2)
+
+ vertex 42 (3,3)
+
+ vertex 62 (4,4)
+
+ vertex 63 (4,5)
+
+ vertex 64 (4,6)
+
+ vertex 65 (4,7)
+
+ vertex 66 (4,8)
+
+ vertex 78 (5,8)
+
+ vertex 90 (6,8)
+
+ vertex 104 (7,8)
+
+ vertex 119 (8,9)
+
+ vertex 137 (9,10)
+
+ vertex 138 (9,11)
+
+ vertex 139 (9,12)
+
+ vertex 140 (9,13)
+
+ vertex 141 (9,14)
+
+ vertex 142 (9,15)
+
+ vertex 124 (8,15)
+
+ vertex 125 (8,16)
+
+ vertex 126 (8,17)
+
+ vertex 127 (8,18)
+
+ vertex 153 (11,19)
+
+ vertex 159 (12,20)
+
+ vertex 172 (13,20)
+
+ vertex 184 (14,20)
+
+ vertex 197 (15,20)
+
+ vertex 210 (16,20)
+
+ vertex 222 (17,20)
+
+ vertex 236 (18,20)
+
+ vertex 254 (19,20)
+
+ vertex 274 (20,20)
+
+
+search algorithm = GBFS
+total iterations = 31
+max frontier size= 35
+vertices visited = 67/275
+
+path length      = 31
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+vertices=275, edges=641
+start=(1,1), goal=(1,20), vertices: 0 and 19
+iter=1, frontier=0, popped=0 (1,1), depth=0, dist2goal=19.0
+
+ push 1 (1,2)
+
+ push 20 (2,1)
+
+ push 21 (2,2)
+
+iter=2, frontier=2, popped=1 (1,2), depth=1, dist2goal=18.0
+
+ push 2 (1,3)
+
+ push 22 (2,3)
+
+iter=3, frontier=3, popped=2 (1,3), depth=2, dist2goal=17.0
+
+ push 3 (1,4)
+
+ push 23 (2,4)
+
+iter=4, frontier=4, popped=3 (1,4), depth=3, dist2goal=16.0
+
+ push 4 (1,5)
+
+ push 24 (2,5)
+
+iter=5, frontier=5, popped=4 (1,5), depth=4, dist2goal=15.0
+
+ push 5 (1,6)
+
+ push 25 (2,6)
+
+iter=6, frontier=6, popped=5 (1,6), depth=5, dist2goal=14.0
+
+ push 6 (1,7)
+
+ push 26 (2,7)
+
+iter=7, frontier=7, popped=6 (1,7), depth=6, dist2goal=13.0
+
+ push 7 (1,8)
+
+ push 27 (2,8)
+
+iter=8, frontier=8, popped=7 (1,8), depth=7, dist2goal=12.0
+
+ push 8 (1,9)
+
+ push 28 (2,9)
+
+iter=9, frontier=9, popped=8 (1,9), depth=8, dist2goal=11.0
+
+ push 9 (1,10)
+
+ push 29 (2,10)
+
+iter=10, frontier=10, popped=9 (1,10), depth=9, dist2goal=10.0
+
+ push 10 (1,11)
+
+ push 30 (2,11)
+
+iter=11, frontier=11, popped=10 (1,11), depth=10, dist2goal=9.0
+
+ push 11 (1,12)
+
+ push 31 (2,12)
+
+iter=12, frontier=12, popped=11 (1,12), depth=11, dist2goal=8.0
+
+ push 12 (1,13)
+
+ push 32 (2,13)
+
+iter=13, frontier=13, popped=12 (1,13), depth=12, dist2goal=7.0
+
+ push 13 (1,14)
+
+ push 33 (2,14)
+
+iter=14, frontier=14, popped=13 (1,14), depth=13, dist2goal=6.0
+
+ push 14 (1,15)
+
+ push 34 (2,15)
+
+iter=15, frontier=15, popped=14 (1,15), depth=14, dist2goal=5.0
+
+ push 15 (1,16)
+
+ push 35 (2,16)
+
+iter=16, frontier=16, popped=15 (1,16), depth=15, dist2goal=4.0
+
+ push 16 (1,17)
+
+ push 36 (2,17)
+
+iter=17, frontier=17, popped=16 (1,17), depth=16, dist2goal=3.0
+
+ push 17 (1,18)
+
+ push 37 (2,18)
+
+iter=18, frontier=18, popped=17 (1,18), depth=17, dist2goal=2.0
+
+ push 18 (1,19)
+
+ push 38 (2,19)
+
+iter=19, frontier=19, popped=18 (1,19), depth=18, dist2goal=1.0
+
+ push 19 (1,20)
+
+ push 39 (2,20)
+
+-----------------
+ vertex 0 (1,1)
+
+ vertex 1 (1,2)
+
+ vertex 2 (1,3)
+
+ vertex 3 (1,4)
+
+ vertex 4 (1,5)
+
+ vertex 5 (1,6)
+
+ vertex 6 (1,7)
+
+ vertex 7 (1,8)
+
+ vertex 8 (1,9)
+
+ vertex 9 (1,10)
+
+ vertex 10 (1,11)
+
+ vertex 11 (1,12)
+
+ vertex 12 (1,13)
+
+ vertex 13 (1,14)
+
+ vertex 14 (1,15)
+
+ vertex 15 (1,16)
+
+ vertex 16 (1,17)
+
+ vertex 17 (1,18)
+
+ vertex 18 (1,19)
+
+ vertex 19 (1,20)
+
+
+search algorithm = GBFS
+total iterations = 19
+max frontier size= 20
+vertices visited = 40/275
+
+path length      = 19
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+vertices=275, edges=641
+start=(1,1), goal=(20,1), vertices: 0 and 255
+iter=1, frontier=0, popped=0 (1,1), depth=0, dist2goal=19.0
+
+ push 1 (1,2)
+
+ push 20 (2,1)
+
+ push 21 (2,2)
+
+iter=2, frontier=2, popped=20 (2,1), depth=1, dist2goal=18.0
+
+ push 40 (3,1)
+
+ push 41 (3,2)
+
+iter=3, frontier=3, popped=40 (3,1), depth=2, dist2goal=17.0
+
+ push 59 (4,1)
+
+ push 60 (4,2)
+
+iter=4, frontier=4, popped=59 (4,1), depth=3, dist2goal=16.0
+
+ push 75 (5,1)
+
+ push 76 (5,2)
+
+iter=5, frontier=5, popped=75 (5,1), depth=4, dist2goal=15.0
+
+ push 87 (6,1)
+
+ push 88 (6,2)
+
+iter=6, frontier=6, popped=87 (6,1), depth=5, dist2goal=14.0
+
+ push 99 (7,1)
+
+ push 100 (7,2)
+
+iter=7, frontier=7, popped=99 (7,1), depth=6, dist2goal=13.0
+
+ push 113 (8,1)
+
+ push 114 (8,2)
+
+iter=8, frontier=8, popped=113 (8,1), depth=7, dist2goal=12.0
+
+ push 130 (9,1)
+
+ push 131 (9,2)
+
+iter=9, frontier=9, popped=130 (9,1), depth=8, dist2goal=11.0
+
+ push 145 (10,1)
+
+ push 146 (10,2)
+
+iter=10, frontier=10, popped=145 (10,1), depth=9, dist2goal=10.0
+
+ push 150 (11,1)
+
+ push 151 (11,2)
+
+iter=11, frontier=11, popped=150 (11,1), depth=10, dist2goal=9.0
+
+ push 155 (12,1)
+
+ push 156 (12,2)
+
+iter=12, frontier=12, popped=155 (12,1), depth=11, dist2goal=8.0
+
+ push 160 (13,1)
+
+ push 161 (13,2)
+
+iter=13, frontier=13, popped=160 (13,1), depth=12, dist2goal=7.0
+
+ push 173 (14,1)
+
+ push 174 (14,2)
+
+iter=14, frontier=14, popped=173 (14,1), depth=13, dist2goal=6.0
+
+ push 185 (15,1)
+
+ push 186 (15,2)
+
+iter=15, frontier=15, popped=185 (15,1), depth=14, dist2goal=5.0
+
+ push 198 (16,1)
+
+ push 199 (16,2)
+
+iter=16, frontier=16, popped=198 (16,1), depth=15, dist2goal=4.0
+
+ push 211 (17,1)
+
+ push 212 (17,2)
+
+iter=17, frontier=17, popped=211 (17,1), depth=16, dist2goal=3.0
+
+ push 223 (18,1)
+
+ push 224 (18,2)
+
+iter=18, frontier=18, popped=223 (18,1), depth=17, dist2goal=2.0
+
+ push 237 (19,1)
+
+ push 238 (19,2)
+
+iter=19, frontier=19, popped=237 (19,1), depth=18, dist2goal=1.0
+
+ push 255 (20,1)
+
+ push 256 (20,2)
+
+-----------------
+ vertex 0 (1,1)
+
+ vertex 20 (2,1)
+
+ vertex 40 (3,1)
+
+ vertex 59 (4,1)
+
+ vertex 75 (5,1)
+
+ vertex 87 (6,1)
+
+ vertex 99 (7,1)
+
+ vertex 113 (8,1)
+
+ vertex 130 (9,1)
+
+ vertex 145 (10,1)
+
+ vertex 150 (11,1)
+
+ vertex 155 (12,1)
+
+ vertex 160 (13,1)
+
+ vertex 173 (14,1)
+
+ vertex 185 (15,1)
+
+ vertex 198 (16,1)
+
+ vertex 211 (17,1)
+
+ vertex 223 (18,1)
+
+ vertex 237 (19,1)
+
+ vertex 255 (20,1)
+
+
+search algorithm = GBFS
+total iterations = 19
+max frontier size= 20
+vertices visited = 40/275
+
+path length      = 19
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+vertices=275, edges=641
+start=(1,20), goal=(20,1), vertices: 19 and 255
+iter=1, frontier=0, popped=19 (1,20), depth=0, dist2goal=26.9
+
+ push 18 (1,19)
+
+ push 39 (2,20)
+
+iter=2, frontier=1, popped=18 (1,19), depth=1, dist2goal=26.2
+
+ push 17 (1,18)
+
+ push 38 (2,19)
+
+iter=3, frontier=2, popped=38 (2,19), depth=2, dist2goal=25.5
+
+ push 37 (2,18)
+
+ push 57 (3,19)
+
+ push 58 (3,20)
+
+iter=4, frontier=4, popped=37 (2,18), depth=3, dist2goal=24.8
+
+ push 16 (1,17)
+
+ push 36 (2,17)
+
+ push 56 (3,18)
+
+iter=5, frontier=6, popped=56 (3,18), depth=4, dist2goal=24.0
+
+ push 55 (3,17)
+
+ push 72 (4,18)
+
+ push 73 (4,19)
+
+iter=6, frontier=8, popped=55 (3,17), depth=5, dist2goal=23.3
+
+ push 35 (2,16)
+
+ push 54 (3,16)
+
+ push 71 (4,17)
+
+iter=7, frontier=10, popped=71 (4,17), depth=6, dist2goal=22.6
+
+ push 70 (4,16)
+
+ push 83 (5,17)
+
+ push 84 (5,18)
+
+iter=8, frontier=12, popped=70 (4,16), depth=7, dist2goal=21.9
+
+ push 53 (3,15)
+
+ push 69 (4,15)
+
+ push 82 (5,16)
+
+iter=9, frontier=14, popped=82 (5,16), depth=8, dist2goal=21.2
+
+ push 81 (5,15)
+
+ push 94 (6,16)
+
+ push 95 (6,17)
+
+iter=10, frontier=16, popped=81 (5,15), depth=9, dist2goal=20.5
+
+ push 80 (5,14)
+
+ push 93 (6,15)
+
+iter=11, frontier=17, popped=93 (6,15), depth=10, dist2goal=19.8
+
+ push 92 (6,14)
+
+ push 107 (7,15)
+
+ push 108 (7,16)
+
+iter=12, frontier=19, popped=92 (6,14), depth=11, dist2goal=19.1
+
+ push 79 (5,13)
+
+ push 91 (6,13)
+
+iter=13, frontier=20, popped=91 (6,13), depth=12, dist2goal=18.4
+
+iter=14, frontier=19, popped=107 (7,15), depth=11, dist2goal=19.1
+
+ push 124 (8,15)
+
+ push 125 (8,16)
+
+iter=15, frontier=20, popped=124 (8,15), depth=12, dist2goal=18.4
+
+ push 142 (9,15)
+
+iter=16, frontier=20, popped=142 (9,15), depth=13, dist2goal=17.8
+
+ push 141 (9,14)
+
+iter=17, frontier=20, popped=141 (9,14), depth=14, dist2goal=17.0
+
+ push 140 (9,13)
+
+iter=18, frontier=20, popped=140 (9,13), depth=15, dist2goal=16.3
+
+ push 122 (8,12)
+
+ push 123 (8,13)
+
+ push 139 (9,12)
+
+iter=19, frontier=22, popped=139 (9,12), depth=16, dist2goal=15.6
+
+ push 121 (8,11)
+
+ push 138 (9,11)
+
+iter=20, frontier=23, popped=138 (9,11), depth=17, dist2goal=14.9
+
+ push 120 (8,10)
+
+ push 137 (9,10)
+
+iter=21, frontier=24, popped=137 (9,10), depth=18, dist2goal=14.2
+
+ push 119 (8,9)
+
+ push 136 (9,9)
+
+iter=22, frontier=25, popped=136 (9,9), depth=19, dist2goal=13.6
+
+ push 118 (8,8)
+
+ push 135 (9,8)
+
+iter=23, frontier=26, popped=135 (9,8), depth=20, dist2goal=13.0
+
+ push 117 (8,7)
+
+ push 134 (9,7)
+
+iter=24, frontier=27, popped=134 (9,7), depth=21, dist2goal=12.5
+
+ push 116 (8,6)
+
+ push 133 (9,6)
+
+iter=25, frontier=28, popped=133 (9,6), depth=22, dist2goal=12.1
+
+iter=26, frontier=27, popped=116 (8,6), depth=22, dist2goal=13.0
+
+ push 102 (7,6)
+
+iter=27, frontier=27, popped=117 (8,7), depth=21, dist2goal=13.4
+
+ push 103 (7,7)
+
+iter=28, frontier=27, popped=118 (8,8), depth=20, dist2goal=13.9
+
+ push 104 (7,8)
+
+iter=29, frontier=27, popped=102 (7,6), depth=23, dist2goal=13.9
+
+iter=30, frontier=26, popped=103 (7,7), depth=22, dist2goal=14.3
+
+iter=31, frontier=25, popped=119 (8,9), depth=19, dist2goal=14.4
+
+ push 105 (7,9)
+
+iter=32, frontier=25, popped=104 (7,8), depth=21, dist2goal=14.8
+
+ push 90 (6,8)
+
+iter=33, frontier=25, popped=120 (8,10), depth=18, dist2goal=15.0
+
+ push 106 (7,10)
+
+iter=34, frontier=25, popped=105 (7,9), depth=20, dist2goal=15.3
+
+iter=35, frontier=24, popped=121 (8,11), depth=17, dist2goal=15.6
+
+iter=36, frontier=23, popped=90 (6,8), depth=22, dist2goal=15.7
+
+ push 78 (5,8)
+
+iter=37, frontier=23, popped=106 (7,10), depth=19, dist2goal=15.8
+
+iter=38, frontier=22, popped=122 (8,12), depth=16, dist2goal=16.3
+
+iter=39, frontier=21, popped=78 (5,8), depth=23, dist2goal=16.6
+
+ push 66 (4,8)
+
+iter=40, frontier=21, popped=123 (8,13), depth=16, dist2goal=17.0
+
+iter=41, frontier=20, popped=66 (4,8), depth=24, dist2goal=17.5
+
+ push 46 (3,7)
+
+ push 47 (3,8)
+
+ push 65 (4,7)
+
+ push 67 (4,9)
+
+iter=42, frontier=23, popped=65 (4,7), depth=25, dist2goal=17.1
+
+ push 45 (3,6)
+
+ push 64 (4,6)
+
+iter=43, frontier=24, popped=64 (4,6), depth=26, dist2goal=16.8
+
+ push 44 (3,5)
+
+ push 63 (4,5)
+
+iter=44, frontier=25, popped=63 (4,5), depth=27, dist2goal=16.5
+
+ push 43 (3,4)
+
+ push 62 (4,4)
+
+iter=45, frontier=26, popped=62 (4,4), depth=28, dist2goal=16.3
+
+ push 42 (3,3)
+
+ push 61 (4,3)
+
+iter=46, frontier=27, popped=61 (4,3), depth=29, dist2goal=16.1
+
+ push 41 (3,2)
+
+ push 60 (4,2)
+
+ push 77 (5,3)
+
+iter=47, frontier=29, popped=77 (5,3), depth=30, dist2goal=15.1
+
+ push 76 (5,2)
+
+ push 89 (6,3)
+
+iter=48, frontier=30, popped=89 (6,3), depth=31, dist2goal=14.1
+
+ push 88 (6,2)
+
+ push 101 (7,3)
+
+iter=49, frontier=31, popped=101 (7,3), depth=32, dist2goal=13.2
+
+ push 100 (7,2)
+
+ push 115 (8,3)
+
+iter=50, frontier=32, popped=115 (8,3), depth=33, dist2goal=12.2
+
+ push 114 (8,2)
+
+ push 132 (9,3)
+
+iter=51, frontier=33, popped=132 (9,3), depth=34, dist2goal=11.2
+
+ push 131 (9,2)
+
+ push 147 (10,3)
+
+iter=52, frontier=34, popped=147 (10,3), depth=35, dist2goal=10.2
+
+ push 146 (10,2)
+
+ push 152 (11,3)
+
+iter=53, frontier=35, popped=152 (11,3), depth=36, dist2goal=9.2
+
+ push 151 (11,2)
+
+ push 157 (12,3)
+
+iter=54, frontier=36, popped=157 (12,3), depth=37, dist2goal=8.2
+
+ push 156 (12,2)
+
+ push 162 (13,3)
+
+iter=55, frontier=37, popped=162 (13,3), depth=38, dist2goal=7.3
+
+ push 161 (13,2)
+
+ push 175 (14,3)
+
+iter=56, frontier=38, popped=175 (14,3), depth=39, dist2goal=6.3
+
+ push 174 (14,2)
+
+ push 187 (15,3)
+
+iter=57, frontier=39, popped=187 (15,3), depth=40, dist2goal=5.4
+
+ push 186 (15,2)
+
+ push 200 (16,3)
+
+iter=58, frontier=40, popped=200 (16,3), depth=41, dist2goal=4.5
+
+ push 199 (16,2)
+
+ push 213 (17,3)
+
+iter=59, frontier=41, popped=213 (17,3), depth=42, dist2goal=3.6
+
+ push 212 (17,2)
+
+ push 225 (18,3)
+
+ push 226 (18,4)
+
+ push 227 (18,5)
+
+iter=60, frontier=44, popped=225 (18,3), depth=43, dist2goal=2.8
+
+ push 224 (18,2)
+
+ push 239 (19,3)
+
+ push 240 (19,4)
+
+iter=61, frontier=46, popped=224 (18,2), depth=44, dist2goal=2.2
+
+ push 211 (17,1)
+
+ push 223 (18,1)
+
+ push 238 (19,2)
+
+iter=62, frontier=48, popped=238 (19,2), depth=45, dist2goal=1.4
+
+ push 237 (19,1)
+
+ push 256 (20,2)
+
+ push 257 (20,3)
+
+iter=63, frontier=50, popped=237 (19,1), depth=46, dist2goal=1.0
+
+ push 255 (20,1)
+
+-----------------
+ vertex 19 (1,20)
+
+ vertex 18 (1,19)
+
+ vertex 38 (2,19)
+
+ vertex 37 (2,18)
+
+ vertex 56 (3,18)
+
+ vertex 55 (3,17)
+
+ vertex 71 (4,17)
+
+ vertex 70 (4,16)
+
+ vertex 82 (5,16)
+
+ vertex 81 (5,15)
+
+ vertex 93 (6,15)
+
+ vertex 107 (7,15)
+
+ vertex 124 (8,15)
+
+ vertex 142 (9,15)
+
+ vertex 141 (9,14)
+
+ vertex 140 (9,13)
+
+ vertex 139 (9,12)
+
+ vertex 138 (9,11)
+
+ vertex 137 (9,10)
+
+ vertex 136 (9,9)
+
+ vertex 118 (8,8)
+
+ vertex 104 (7,8)
+
+ vertex 90 (6,8)
+
+ vertex 78 (5,8)
+
+ vertex 66 (4,8)
+
+ vertex 65 (4,7)
+
+ vertex 64 (4,6)
+
+ vertex 63 (4,5)
+
+ vertex 62 (4,4)
+
+ vertex 61 (4,3)
+
+ vertex 77 (5,3)
+
+ vertex 89 (6,3)
+
+ vertex 101 (7,3)
+
+ vertex 115 (8,3)
+
+ vertex 132 (9,3)
+
+ vertex 147 (10,3)
+
+ vertex 152 (11,3)
+
+ vertex 157 (12,3)
+
+ vertex 162 (13,3)
+
+ vertex 175 (14,3)
+
+ vertex 187 (15,3)
+
+ vertex 200 (16,3)
+
+ vertex 213 (17,3)
+
+ vertex 225 (18,3)
+
+ vertex 224 (18,2)
+
+ vertex 238 (19,2)
+
+ vertex 237 (19,1)
+
+ vertex 255 (20,1)
+
+
+search algorithm = GBFS
+total iterations = 63
+max frontier size= 51
+vertices visited = 114/275
+
+path length      = 47
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+vertices=275, edges=641
+start=(7,6), goal=(13,6), vertices: 102 and 163
+iter=1, frontier=0, popped=102 (7,6), depth=0, dist2goal=6.0
+
+ push 103 (7,7)
+
+ push 116 (8,6)
+
+ push 117 (8,7)
+
+iter=2, frontier=2, popped=116 (8,6), depth=1, dist2goal=5.0
+
+ push 133 (9,6)
+
+ push 134 (9,7)
+
+iter=3, frontier=3, popped=133 (9,6), depth=2, dist2goal=4.0
+
+iter=4, frontier=2, popped=134 (9,7), depth=2, dist2goal=4.1
+
+ push 135 (9,8)
+
+iter=5, frontier=2, popped=135 (9,8), depth=3, dist2goal=4.5
+
+ push 118 (8,8)
+
+ push 136 (9,9)
+
+iter=6, frontier=3, popped=136 (9,9), depth=4, dist2goal=5.0
+
+ push 119 (8,9)
+
+ push 137 (9,10)
+
+iter=7, frontier=4, popped=117 (8,7), depth=1, dist2goal=5.1
+
+iter=8, frontier=3, popped=118 (8,8), depth=4, dist2goal=5.4
+
+ push 104 (7,8)
+
+iter=9, frontier=3, popped=137 (9,10), depth=5, dist2goal=5.7
+
+ push 120 (8,10)
+
+ push 138 (9,11)
+
+iter=10, frontier=4, popped=119 (8,9), depth=5, dist2goal=5.8
+
+ push 105 (7,9)
+
+iter=11, frontier=4, popped=103 (7,7), depth=1, dist2goal=6.1
+
+iter=12, frontier=3, popped=104 (7,8), depth=5, dist2goal=6.3
+
+ push 90 (6,8)
+
+iter=13, frontier=3, popped=120 (8,10), depth=6, dist2goal=6.4
+
+ push 106 (7,10)
+
+ push 121 (8,11)
+
+iter=14, frontier=4, popped=138 (9,11), depth=6, dist2goal=6.4
+
+ push 139 (9,12)
+
+iter=15, frontier=4, popped=105 (7,9), depth=6, dist2goal=6.7
+
+iter=16, frontier=3, popped=121 (8,11), depth=7, dist2goal=7.1
+
+ push 122 (8,12)
+
+iter=17, frontier=3, popped=106 (7,10), depth=7, dist2goal=7.2
+
+iter=18, frontier=2, popped=139 (9,12), depth=7, dist2goal=7.2
+
+ push 140 (9,13)
+
+iter=19, frontier=2, popped=90 (6,8), depth=6, dist2goal=7.3
+
+ push 78 (5,8)
+
+iter=20, frontier=2, popped=122 (8,12), depth=8, dist2goal=7.8
+
+ push 123 (8,13)
+
+iter=21, frontier=2, popped=140 (9,13), depth=8, dist2goal=8.1
+
+ push 141 (9,14)
+
+iter=22, frontier=2, popped=78 (5,8), depth=7, dist2goal=8.2
+
+ push 66 (4,8)
+
+iter=23, frontier=2, popped=123 (8,13), depth=9, dist2goal=8.6
+
+iter=24, frontier=1, popped=141 (9,14), depth=9, dist2goal=8.9
+
+ push 142 (9,15)
+
+iter=25, frontier=1, popped=66 (4,8), depth=8, dist2goal=9.2
+
+ push 46 (3,7)
+
+ push 47 (3,8)
+
+ push 65 (4,7)
+
+ push 67 (4,9)
+
+iter=26, frontier=4, popped=65 (4,7), depth=9, dist2goal=9.1
+
+ push 45 (3,6)
+
+ push 64 (4,6)
+
+iter=27, frontier=5, popped=64 (4,6), depth=10, dist2goal=9.0
+
+ push 44 (3,5)
+
+ push 63 (4,5)
+
+iter=28, frontier=6, popped=63 (4,5), depth=11, dist2goal=9.1
+
+ push 43 (3,4)
+
+ push 62 (4,4)
+
+iter=29, frontier=7, popped=62 (4,4), depth=12, dist2goal=9.2
+
+ push 42 (3,3)
+
+ push 61 (4,3)
+
+iter=30, frontier=8, popped=67 (4,9), depth=9, dist2goal=9.5
+
+ push 48 (3,9)
+
+ push 68 (4,10)
+
+iter=31, frontier=9, popped=61 (4,3), depth=13, dist2goal=9.5
+
+ push 41 (3,2)
+
+ push 60 (4,2)
+
+ push 77 (5,3)
+
+iter=32, frontier=11, popped=77 (5,3), depth=14, dist2goal=8.5
+
+ push 76 (5,2)
+
+ push 89 (6,3)
+
+iter=33, frontier=12, popped=89 (6,3), depth=15, dist2goal=7.6
+
+ push 88 (6,2)
+
+ push 101 (7,3)
+
+iter=34, frontier=13, popped=101 (7,3), depth=16, dist2goal=6.7
+
+ push 100 (7,2)
+
+ push 115 (8,3)
+
+iter=35, frontier=14, popped=115 (8,3), depth=17, dist2goal=5.8
+
+ push 114 (8,2)
+
+ push 132 (9,3)
+
+iter=36, frontier=15, popped=132 (9,3), depth=18, dist2goal=5.0
+
+ push 131 (9,2)
+
+ push 147 (10,3)
+
+iter=37, frontier=16, popped=147 (10,3), depth=19, dist2goal=4.2
+
+ push 146 (10,2)
+
+ push 152 (11,3)
+
+iter=38, frontier=17, popped=152 (11,3), depth=20, dist2goal=3.6
+
+ push 151 (11,2)
+
+ push 157 (12,3)
+
+iter=39, frontier=18, popped=157 (12,3), depth=21, dist2goal=3.2
+
+ push 156 (12,2)
+
+ push 162 (13,3)
+
+iter=40, frontier=19, popped=162 (13,3), depth=22, dist2goal=3.0
+
+ push 161 (13,2)
+
+ push 175 (14,3)
+
+iter=41, frontier=20, popped=175 (14,3), depth=23, dist2goal=3.2
+
+ push 174 (14,2)
+
+ push 187 (15,3)
+
+iter=42, frontier=21, popped=187 (15,3), depth=24, dist2goal=3.6
+
+ push 186 (15,2)
+
+ push 200 (16,3)
+
+iter=43, frontier=22, popped=161 (13,2), depth=23, dist2goal=4.0
+
+ push 155 (12,1)
+
+ push 160 (13,1)
+
+iter=44, frontier=23, popped=156 (12,2), depth=22, dist2goal=4.1
+
+ push 150 (11,1)
+
+iter=45, frontier=23, popped=174 (14,2), depth=24, dist2goal=4.1
+
+ push 173 (14,1)
+
+iter=46, frontier=23, popped=200 (16,3), depth=25, dist2goal=4.2
+
+ push 199 (16,2)
+
+ push 213 (17,3)
+
+iter=47, frontier=24, popped=151 (11,2), depth=21, dist2goal=4.5
+
+ push 145 (10,1)
+
+iter=48, frontier=24, popped=186 (15,2), depth=25, dist2goal=4.5
+
+ push 185 (15,1)
+
+iter=49, frontier=24, popped=146 (10,2), depth=20, dist2goal=5.0
+
+ push 130 (9,1)
+
+iter=50, frontier=24, popped=160 (13,1), depth=24, dist2goal=5.0
+
+iter=51, frontier=23, popped=199 (16,2), depth=26, dist2goal=5.0
+
+ push 198 (16,1)
+
+ push 212 (17,2)
+
+iter=52, frontier=24, popped=213 (17,3), depth=26, dist2goal=5.0
+
+ push 225 (18,3)
+
+ push 226 (18,4)
+
+ push 227 (18,5)
+
+iter=53, frontier=26, popped=155 (12,1), depth=24, dist2goal=5.1
+
+iter=54, frontier=25, popped=173 (14,1), depth=25, dist2goal=5.1
+
+iter=55, frontier=24, popped=227 (18,5), depth=27, dist2goal=5.1
+
+ push 214 (17,8)
+
+ push 228 (18,6)
+
+ push 241 (19,5)
+
+ push 242 (19,6)
+
+iter=56, frontier=27, popped=214 (17,8), depth=28, dist2goal=4.5
+
+ push 201 (16,8)
+
+ push 202 (16,9)
+
+ push 203 (16,10)
+
+ push 229 (18,7)
+
+ push 230 (18,8)
+
+iter=57, frontier=31, popped=201 (16,8), depth=29, dist2goal=3.6
+
+ push 177 (14,7)
+
+ push 188 (15,8)
+
+iter=58, frontier=32, popped=177 (14,7), depth=30, dist2goal=1.4
+
+ push 163 (13,6)
+
+ push 164 (13,7)
+
+ push 176 (14,6)
+
+ push 178 (14,8)
+
+-----------------
+ vertex 102 (7,6)
+
+ vertex 116 (8,6)
+
+ vertex 134 (9,7)
+
+ vertex 135 (9,8)
+
+ vertex 118 (8,8)
+
+ vertex 104 (7,8)
+
+ vertex 90 (6,8)
+
+ vertex 78 (5,8)
+
+ vertex 66 (4,8)
+
+ vertex 65 (4,7)
+
+ vertex 64 (4,6)
+
+ vertex 63 (4,5)
+
+ vertex 62 (4,4)
+
+ vertex 61 (4,3)
+
+ vertex 77 (5,3)
+
+ vertex 89 (6,3)
+
+ vertex 101 (7,3)
+
+ vertex 115 (8,3)
+
+ vertex 132 (9,3)
+
+ vertex 147 (10,3)
+
+ vertex 152 (11,3)
+
+ vertex 157 (12,3)
+
+ vertex 162 (13,3)
+
+ vertex 175 (14,3)
+
+ vertex 187 (15,3)
+
+ vertex 200 (16,3)
+
+ vertex 213 (17,3)
+
+ vertex 227 (18,5)
+
+ vertex 214 (17,8)
+
+ vertex 201 (16,8)
+
+ vertex 177 (14,7)
+
+ vertex 163 (13,6)
+
+
+search algorithm = GBFS
+total iterations = 58
+max frontier size= 33
+vertices visited = 94/275
+
+path length      = 31
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+vertices=275, edges=641
+start=(5,13), goal=(16,10), vertices: 79 and 203
+iter=1, frontier=0, popped=79 (5,13), depth=0, dist2goal=11.4
+
+ push 80 (5,14)
+
+ push 91 (6,13)
+
+ push 92 (6,14)
+
+iter=2, frontier=2, popped=91 (6,13), depth=1, dist2goal=10.4
+
+iter=3, frontier=1, popped=92 (6,14), depth=1, dist2goal=10.8
+
+ push 93 (6,15)
+
+ push 107 (7,15)
+
+iter=4, frontier=2, popped=107 (7,15), depth=2, dist2goal=10.3
+
+ push 108 (7,16)
+
+ push 124 (8,15)
+
+ push 125 (8,16)
+
+iter=5, frontier=4, popped=124 (8,15), depth=3, dist2goal=9.4
+
+ push 142 (9,15)
+
+iter=6, frontier=4, popped=142 (9,15), depth=4, dist2goal=8.6
+
+ push 141 (9,14)
+
+iter=7, frontier=4, popped=141 (9,14), depth=5, dist2goal=8.1
+
+ push 140 (9,13)
+
+iter=8, frontier=4, popped=140 (9,13), depth=6, dist2goal=7.6
+
+ push 122 (8,12)
+
+ push 123 (8,13)
+
+ push 139 (9,12)
+
+iter=9, frontier=6, popped=139 (9,12), depth=7, dist2goal=7.3
+
+ push 121 (8,11)
+
+ push 138 (9,11)
+
+iter=10, frontier=7, popped=138 (9,11), depth=8, dist2goal=7.1
+
+ push 120 (8,10)
+
+ push 137 (9,10)
+
+iter=11, frontier=8, popped=137 (9,10), depth=9, dist2goal=7.0
+
+ push 119 (8,9)
+
+ push 136 (9,9)
+
+iter=12, frontier=9, popped=136 (9,9), depth=10, dist2goal=7.1
+
+ push 118 (8,8)
+
+ push 135 (9,8)
+
+iter=13, frontier=10, popped=135 (9,8), depth=11, dist2goal=7.3
+
+ push 117 (8,7)
+
+ push 134 (9,7)
+
+iter=14, frontier=11, popped=134 (9,7), depth=12, dist2goal=7.6
+
+ push 116 (8,6)
+
+ push 133 (9,6)
+
+iter=15, frontier=12, popped=120 (8,10), depth=9, dist2goal=8.0
+
+ push 105 (7,9)
+
+ push 106 (7,10)
+
+iter=16, frontier=13, popped=121 (8,11), depth=8, dist2goal=8.1
+
+iter=17, frontier=12, popped=119 (8,9), depth=10, dist2goal=8.1
+
+ push 104 (7,8)
+
+iter=18, frontier=12, popped=133 (9,6), depth=13, dist2goal=8.1
+
+iter=19, frontier=11, popped=122 (8,12), depth=7, dist2goal=8.2
+
+iter=20, frontier=10, popped=118 (8,8), depth=11, dist2goal=8.2
+
+ push 103 (7,7)
+
+iter=21, frontier=10, popped=123 (8,13), depth=7, dist2goal=8.5
+
+iter=22, frontier=9, popped=117 (8,7), depth=12, dist2goal=8.5
+
+ push 102 (7,6)
+
+iter=23, frontier=9, popped=116 (8,6), depth=13, dist2goal=8.9
+
+iter=24, frontier=8, popped=106 (7,10), depth=10, dist2goal=9.0
+
+iter=25, frontier=7, popped=105 (7,9), depth=10, dist2goal=9.1
+
+iter=26, frontier=6, popped=104 (7,8), depth=11, dist2goal=9.2
+
+ push 90 (6,8)
+
+iter=27, frontier=6, popped=103 (7,7), depth=12, dist2goal=9.5
+
+iter=28, frontier=5, popped=102 (7,6), depth=13, dist2goal=9.8
+
+iter=29, frontier=4, popped=125 (8,16), depth=3, dist2goal=10.0
+
+ push 126 (8,17)
+
+iter=30, frontier=4, popped=90 (6,8), depth=12, dist2goal=10.2
+
+ push 78 (5,8)
+
+iter=31, frontier=4, popped=126 (8,17), depth=4, dist2goal=10.6
+
+ push 109 (7,17)
+
+ push 127 (8,18)
+
+iter=32, frontier=5, popped=108 (7,16), depth=3, dist2goal=10.8
+
+ push 94 (6,16)
+
+iter=33, frontier=5, popped=93 (6,15), depth=2, dist2goal=11.2
+
+ push 81 (5,15)
+
+iter=34, frontier=5, popped=78 (5,8), depth=13, dist2goal=11.2
+
+ push 66 (4,8)
+
+iter=35, frontier=5, popped=127 (8,18), depth=5, dist2goal=11.3
+
+ push 110 (7,18)
+
+ push 128 (8,19)
+
+ push 143 (9,19)
+
+ push 148 (10,19)
+
+ push 153 (11,19)
+
+iter=36, frontier=9, popped=153 (11,19), depth=6, dist2goal=10.3
+
+ push 154 (11,20)
+
+ push 158 (12,19)
+
+ push 159 (12,20)
+
+iter=37, frontier=11, popped=158 (12,19), depth=7, dist2goal=9.8
+
+ push 171 (13,19)
+
+ push 172 (13,20)
+
+iter=38, frontier=12, popped=171 (13,19), depth=8, dist2goal=9.5
+
+ push 181 (14,17)
+
+ push 182 (14,18)
+
+ push 183 (14,19)
+
+ push 184 (14,20)
+
+iter=39, frontier=15, popped=181 (14,17), depth=9, dist2goal=7.3
+
+ push 180 (14,16)
+
+ push 194 (15,17)
+
+ push 195 (15,18)
+
+iter=40, frontier=17, popped=180 (14,16), depth=10, dist2goal=6.3
+
+ push 179 (14,15)
+
+ push 193 (15,16)
+
+iter=41, frontier=18, popped=179 (14,15), depth=11, dist2goal=5.4
+
+ push 170 (13,15)
+
+ push 192 (15,15)
+
+iter=42, frontier=19, popped=192 (15,15), depth=12, dist2goal=5.1
+
+ push 191 (15,14)
+
+ push 205 (16,15)
+
+ push 206 (16,16)
+
+iter=43, frontier=21, popped=191 (15,14), depth=13, dist2goal=4.1
+
+ push 190 (15,13)
+
+ push 204 (16,14)
+
+iter=44, frontier=22, popped=190 (15,13), depth=14, dist2goal=3.2
+
+ push 189 (15,12)
+
+iter=45, frontier=22, popped=189 (15,12), depth=15, dist2goal=2.2
+
+iter=46, frontier=21, popped=204 (16,14), depth=14, dist2goal=4.0
+
+ push 215 (17,12)
+
+ push 216 (17,13)
+
+ push 217 (17,15)
+
+ push 231 (18,15)
+
+iter=47, frontier=24, popped=215 (17,12), depth=15, dist2goal=2.2
+
+iter=48, frontier=23, popped=216 (17,13), depth=15, dist2goal=3.2
+
+iter=49, frontier=22, popped=205 (16,15), depth=13, dist2goal=5.0
+
+ push 218 (17,16)
+
+iter=50, frontier=22, popped=217 (17,15), depth=15, dist2goal=5.1
+
+ push 232 (18,16)
+
+iter=51, frontier=22, popped=231 (18,15), depth=15, dist2goal=5.4
+
+ push 249 (19,15)
+
+ push 250 (19,16)
+
+ push 268 (20,14)
+
+iter=52, frontier=24, popped=268 (20,14), depth=16, dist2goal=5.7
+
+ push 248 (19,13)
+
+ push 267 (20,13)
+
+ push 269 (20,15)
+
+iter=53, frontier=26, popped=248 (19,13), depth=17, dist2goal=4.2
+
+ push 247 (19,12)
+
+iter=54, frontier=26, popped=247 (19,12), depth=18, dist2goal=3.6
+
+ push 246 (19,11)
+
+ push 266 (20,12)
+
+iter=55, frontier=27, popped=246 (19,11), depth=19, dist2goal=3.2
+
+ push 245 (19,10)
+
+ push 265 (20,11)
+
+iter=56, frontier=28, popped=245 (19,10), depth=20, dist2goal=3.0
+
+ push 263 (20,9)
+
+ push 264 (20,10)
+
+iter=57, frontier=29, popped=264 (20,10), depth=21, dist2goal=4.0
+
+iter=58, frontier=28, popped=265 (20,11), depth=20, dist2goal=4.1
+
+iter=59, frontier=27, popped=263 (20,9), depth=21, dist2goal=4.1
+
+ push 244 (19,8)
+
+ push 262 (20,8)
+
+iter=60, frontier=28, popped=244 (19,8), depth=22, dist2goal=3.6
+
+ push 229 (18,7)
+
+ push 230 (18,8)
+
+ push 243 (19,7)
+
+iter=61, frontier=30, popped=230 (18,8), depth=23, dist2goal=2.8
+
+ push 214 (17,8)
+
+iter=62, frontier=30, popped=214 (17,8), depth=24, dist2goal=2.2
+
+ push 201 (16,8)
+
+ push 202 (16,9)
+
+ push 203 (16,10)
+
+ push 227 (18,5)
+
+ push 228 (18,6)
+
+-----------------
+ vertex 79 (5,13)
+
+ vertex 92 (6,14)
+
+ vertex 107 (7,15)
+
+ vertex 125 (8,16)
+
+ vertex 126 (8,17)
+
+ vertex 127 (8,18)
+
+ vertex 153 (11,19)
+
+ vertex 158 (12,19)
+
+ vertex 171 (13,19)
+
+ vertex 181 (14,17)
+
+ vertex 180 (14,16)
+
+ vertex 179 (14,15)
+
+ vertex 192 (15,15)
+
+ vertex 191 (15,14)
+
+ vertex 204 (16,14)
+
+ vertex 231 (18,15)
+
+ vertex 268 (20,14)
+
+ vertex 248 (19,13)
+
+ vertex 247 (19,12)
+
+ vertex 246 (19,11)
+
+ vertex 245 (19,10)
+
+ vertex 263 (20,9)
+
+ vertex 244 (19,8)
+
+ vertex 230 (18,8)
+
+ vertex 214 (17,8)
+
+ vertex 203 (16,10)
+
+
+search algorithm = GBFS
+total iterations = 62
+max frontier size= 31
+vertices visited = 97/275
+
+path length      = 25
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+vertices=275, edges=641
+start=(6,13), goal=(7,10), vertices: 91 and 106
+iter=1, frontier=0, popped=91 (6,13), depth=0, dist2goal=3.2
+
+ push 79 (5,13)
+
+ push 92 (6,14)
+
+iter=2, frontier=1, popped=79 (5,13), depth=1, dist2goal=3.6
+
+ push 80 (5,14)
+
+iter=3, frontier=1, popped=92 (6,14), depth=1, dist2goal=4.1
+
+ push 93 (6,15)
+
+ push 107 (7,15)
+
+iter=4, frontier=2, popped=80 (5,14), depth=2, dist2goal=4.5
+
+ push 81 (5,15)
+
+iter=5, frontier=2, popped=107 (7,15), depth=2, dist2goal=5.0
+
+ push 108 (7,16)
+
+ push 124 (8,15)
+
+ push 125 (8,16)
+
+iter=6, frontier=4, popped=93 (6,15), depth=2, dist2goal=5.1
+
+ push 94 (6,16)
+
+iter=7, frontier=4, popped=124 (8,15), depth=3, dist2goal=5.1
+
+ push 142 (9,15)
+
+iter=8, frontier=4, popped=81 (5,15), depth=3, dist2goal=5.4
+
+ push 69 (4,15)
+
+ push 82 (5,16)
+
+iter=9, frontier=5, popped=142 (9,15), depth=4, dist2goal=5.4
+
+ push 141 (9,14)
+
+iter=10, frontier=5, popped=141 (9,14), depth=5, dist2goal=4.5
+
+ push 140 (9,13)
+
+iter=11, frontier=5, popped=140 (9,13), depth=6, dist2goal=3.6
+
+ push 122 (8,12)
+
+ push 123 (8,13)
+
+ push 139 (9,12)
+
+iter=12, frontier=7, popped=122 (8,12), depth=7, dist2goal=2.2
+
+ push 106 (7,10)
+
+ push 121 (8,11)
+
+-----------------
+ vertex 91 (6,13)
+
+ vertex 92 (6,14)
+
+ vertex 107 (7,15)
+
+ vertex 124 (8,15)
+
+ vertex 142 (9,15)
+
+ vertex 141 (9,14)
+
+ vertex 140 (9,13)
+
+ vertex 122 (8,12)
+
+ vertex 106 (7,10)
+
+
+search algorithm = GBFS
+total iterations = 12
+max frontier size= 8
+vertices visited = 21/275
+
+path length      = 8
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+vertices=275, edges=641
+start=(15,12), goal=(15,8), vertices: 189 and 188
+iter=1, frontier=0, popped=189 (15,12), depth=0, dist2goal=4.0
+
+ push 190 (15,13)
+
+iter=2, frontier=0, popped=190 (15,13), depth=1, dist2goal=5.0
+
+ push 191 (15,14)
+
+ push 204 (16,14)
+
+iter=3, frontier=1, popped=191 (15,14), depth=2, dist2goal=6.0
+
+ push 192 (15,15)
+
+ push 205 (16,15)
+
+iter=4, frontier=2, popped=204 (16,14), depth=2, dist2goal=6.1
+
+ push 215 (17,12)
+
+ push 216 (17,13)
+
+ push 217 (17,15)
+
+ push 231 (18,15)
+
+iter=5, frontier=5, popped=215 (17,12), depth=3, dist2goal=4.5
+
+iter=6, frontier=4, popped=216 (17,13), depth=3, dist2goal=5.4
+
+iter=7, frontier=3, popped=192 (15,15), depth=3, dist2goal=7.0
+
+ push 179 (14,15)
+
+ push 193 (15,16)
+
+ push 206 (16,16)
+
+iter=8, frontier=5, popped=205 (16,15), depth=3, dist2goal=7.1
+
+ push 218 (17,16)
+
+iter=9, frontier=5, popped=179 (14,15), depth=4, dist2goal=7.1
+
+ push 170 (13,15)
+
+ push 180 (14,16)
+
+iter=10, frontier=6, popped=217 (17,15), depth=3, dist2goal=7.3
+
+ push 232 (18,16)
+
+iter=11, frontier=6, popped=170 (13,15), depth=5, dist2goal=7.3
+
+iter=12, frontier=5, popped=231 (18,15), depth=3, dist2goal=7.6
+
+ push 249 (19,15)
+
+ push 250 (19,16)
+
+ push 268 (20,14)
+
+iter=13, frontier=7, popped=268 (20,14), depth=4, dist2goal=7.8
+
+ push 248 (19,13)
+
+ push 267 (20,13)
+
+ push 269 (20,15)
+
+iter=14, frontier=9, popped=248 (19,13), depth=5, dist2goal=6.4
+
+ push 247 (19,12)
+
+iter=15, frontier=9, popped=247 (19,12), depth=6, dist2goal=5.7
+
+ push 246 (19,11)
+
+ push 266 (20,12)
+
+iter=16, frontier=10, popped=246 (19,11), depth=7, dist2goal=5.0
+
+ push 245 (19,10)
+
+ push 265 (20,11)
+
+iter=17, frontier=11, popped=245 (19,10), depth=8, dist2goal=4.5
+
+ push 263 (20,9)
+
+ push 264 (20,10)
+
+iter=18, frontier=12, popped=263 (20,9), depth=9, dist2goal=5.1
+
+ push 244 (19,8)
+
+ push 262 (20,8)
+
+iter=19, frontier=13, popped=244 (19,8), depth=10, dist2goal=4.0
+
+ push 229 (18,7)
+
+ push 230 (18,8)
+
+ push 243 (19,7)
+
+iter=20, frontier=15, popped=230 (18,8), depth=11, dist2goal=3.0
+
+ push 214 (17,8)
+
+iter=21, frontier=15, popped=214 (17,8), depth=12, dist2goal=2.0
+
+ push 201 (16,8)
+
+ push 202 (16,9)
+
+ push 203 (16,10)
+
+ push 227 (18,5)
+
+ push 228 (18,6)
+
+iter=22, frontier=19, popped=201 (16,8), depth=13, dist2goal=1.0
+
+ push 177 (14,7)
+
+ push 188 (15,8)
+
+-----------------
+ vertex 189 (15,12)
+
+ vertex 190 (15,13)
+
+ vertex 204 (16,14)
+
+ vertex 231 (18,15)
+
+ vertex 268 (20,14)
+
+ vertex 248 (19,13)
+
+ vertex 247 (19,12)
+
+ vertex 246 (19,11)
+
+ vertex 245 (19,10)
+
+ vertex 263 (20,9)
+
+ vertex 244 (19,8)
+
+ vertex 230 (18,8)
+
+ vertex 214 (17,8)
+
+ vertex 201 (16,8)
+
+ vertex 188 (15,8)
+
+
+search algorithm = GBFS
+total iterations = 22
+max frontier size= 20
+vertices visited = 43/275
+
+path length      = 14
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+vertices=275, edges=641
+start=(8,10), goal=(15,12), vertices: 120 and 189
+iter=1, frontier=0, popped=120 (8,10), depth=0, dist2goal=7.3
+
+ push 105 (7,9)
+
+ push 106 (7,10)
+
+ push 119 (8,9)
+
+ push 121 (8,11)
+
+ push 137 (9,10)
+
+ push 138 (9,11)
+
+iter=2, frontier=5, popped=138 (9,11), depth=1, dist2goal=6.1
+
+ push 139 (9,12)
+
+iter=3, frontier=5, popped=139 (9,12), depth=2, dist2goal=6.0
+
+ push 122 (8,12)
+
+ push 140 (9,13)
+
+iter=4, frontier=6, popped=140 (9,13), depth=3, dist2goal=6.1
+
+ push 123 (8,13)
+
+ push 141 (9,14)
+
+iter=5, frontier=7, popped=137 (9,10), depth=1, dist2goal=6.3
+
+ push 136 (9,9)
+
+iter=6, frontier=7, popped=141 (9,14), depth=4, dist2goal=6.3
+
+ push 142 (9,15)
+
+iter=7, frontier=7, popped=136 (9,9), depth=2, dist2goal=6.7
+
+ push 118 (8,8)
+
+ push 135 (9,8)
+
+iter=8, frontier=8, popped=142 (9,15), depth=5, dist2goal=6.7
+
+ push 124 (8,15)
+
+iter=9, frontier=8, popped=122 (8,12), depth=3, dist2goal=7.0
+
+iter=10, frontier=7, popped=121 (8,11), depth=1, dist2goal=7.1
+
+iter=11, frontier=6, popped=123 (8,13), depth=4, dist2goal=7.1
+
+iter=12, frontier=5, popped=135 (9,8), depth=3, dist2goal=7.2
+
+ push 117 (8,7)
+
+ push 134 (9,7)
+
+iter=13, frontier=6, popped=119 (8,9), depth=1, dist2goal=7.6
+
+ push 104 (7,8)
+
+iter=14, frontier=6, popped=124 (8,15), depth=6, dist2goal=7.6
+
+ push 107 (7,15)
+
+ push 125 (8,16)
+
+iter=15, frontier=7, popped=134 (9,7), depth=4, dist2goal=7.8
+
+ push 116 (8,6)
+
+ push 133 (9,6)
+
+iter=16, frontier=8, popped=118 (8,8), depth=3, dist2goal=8.1
+
+ push 103 (7,7)
+
+iter=17, frontier=8, popped=125 (8,16), depth=7, dist2goal=8.1
+
+ push 108 (7,16)
+
+ push 126 (8,17)
+
+iter=18, frontier=9, popped=106 (7,10), depth=1, dist2goal=8.2
+
+iter=19, frontier=8, popped=133 (9,6), depth=5, dist2goal=8.5
+
+iter=20, frontier=7, popped=105 (7,9), depth=1, dist2goal=8.5
+
+iter=21, frontier=6, popped=107 (7,15), depth=7, dist2goal=8.5
+
+ push 92 (6,14)
+
+ push 93 (6,15)
+
+iter=22, frontier=7, popped=117 (8,7), depth=4, dist2goal=8.6
+
+ push 102 (7,6)
+
+iter=23, frontier=7, popped=126 (8,17), depth=8, dist2goal=8.6
+
+ push 109 (7,17)
+
+ push 127 (8,18)
+
+iter=24, frontier=8, popped=104 (7,8), depth=2, dist2goal=8.9
+
+ push 90 (6,8)
+
+iter=25, frontier=8, popped=108 (7,16), depth=8, dist2goal=8.9
+
+ push 94 (6,16)
+
+iter=26, frontier=8, popped=116 (8,6), depth=5, dist2goal=9.2
+
+iter=27, frontier=7, popped=92 (6,14), depth=8, dist2goal=9.2
+
+ push 79 (5,13)
+
+ push 80 (5,14)
+
+ push 91 (6,13)
+
+iter=28, frontier=9, popped=91 (6,13), depth=9, dist2goal=9.1
+
+iter=29, frontier=8, popped=127 (8,18), depth=9, dist2goal=9.2
+
+ push 110 (7,18)
+
+ push 128 (8,19)
+
+ push 143 (9,19)
+
+ push 148 (10,19)
+
+ push 153 (11,19)
+
+iter=30, frontier=12, popped=153 (11,19), depth=10, dist2goal=8.1
+
+ push 154 (11,20)
+
+ push 158 (12,19)
+
+ push 159 (12,20)
+
+iter=31, frontier=14, popped=158 (12,19), depth=11, dist2goal=7.6
+
+ push 171 (13,19)
+
+ push 172 (13,20)
+
+iter=32, frontier=15, popped=171 (13,19), depth=12, dist2goal=7.3
+
+ push 181 (14,17)
+
+ push 182 (14,18)
+
+ push 183 (14,19)
+
+ push 184 (14,20)
+
+iter=33, frontier=18, popped=181 (14,17), depth=13, dist2goal=5.1
+
+ push 180 (14,16)
+
+ push 194 (15,17)
+
+ push 195 (15,18)
+
+iter=34, frontier=20, popped=180 (14,16), depth=14, dist2goal=4.1
+
+ push 179 (14,15)
+
+ push 193 (15,16)
+
+iter=35, frontier=21, popped=179 (14,15), depth=15, dist2goal=3.2
+
+ push 170 (13,15)
+
+ push 192 (15,15)
+
+iter=36, frontier=22, popped=192 (15,15), depth=16, dist2goal=3.0
+
+ push 191 (15,14)
+
+ push 205 (16,15)
+
+ push 206 (16,16)
+
+iter=37, frontier=24, popped=191 (15,14), depth=17, dist2goal=2.0
+
+ push 190 (15,13)
+
+ push 204 (16,14)
+
+iter=38, frontier=25, popped=190 (15,13), depth=18, dist2goal=1.0
+
+ push 189 (15,12)
+
+-----------------
+ vertex 120 (8,10)
+
+ vertex 138 (9,11)
+
+ vertex 139 (9,12)
+
+ vertex 140 (9,13)
+
+ vertex 141 (9,14)
+
+ vertex 142 (9,15)
+
+ vertex 124 (8,15)
+
+ vertex 125 (8,16)
+
+ vertex 126 (8,17)
+
+ vertex 127 (8,18)
+
+ vertex 153 (11,19)
+
+ vertex 158 (12,19)
+
+ vertex 171 (13,19)
+
+ vertex 181 (14,17)
+
+ vertex 180 (14,16)
+
+ vertex 179 (14,15)
+
+ vertex 192 (15,15)
+
+ vertex 191 (15,14)
+
+ vertex 190 (15,13)
+
+ vertex 189 (15,12)
+
+
+search algorithm = GBFS
+total iterations = 38
+max frontier size= 26
+vertices visited = 64/275
+
+path length      = 19
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
