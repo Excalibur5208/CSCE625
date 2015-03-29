@@ -1,0 +1,82 @@
+file kb1:
+--------
+# comment: per color at least and at most appears once
+C1W C2W C3W
+-C1W -C2W
+-C1W -C3W
+-C2W -C3W
+
+C1Y C2Y C3Y
+-C1Y -C2Y
+-C1Y -C3Y
+-C2Y -C3Y
+
+C1B C2B C3B
+-C1B -C2B
+-C1B -C3B
+-C2B -C3B
+
+# comment: wrong label implies
+# comment: L1W -> -C1W
+-L1W -C1W
+-L1Y -C1Y
+-L1B -C1B
+
+-L2W -C2W
+-L2Y -C2Y
+-L2B -C2B
+
+-L3W -C3W
+-L3Y -C3Y
+-L3B -C3B
+
+# comment: at least and at most one label for each box
+L1W L1Y L1B
+-L1W -L1Y
+-L1W -L1B
+-L1Y -L1B
+
+L2W L2Y L2B
+-L2W -L2Y
+-L2W -L2B
+-L2Y -L2B
+
+L3W L3Y L3B
+-L3W -L3Y
+-L3W -L3B
+-L3Y -L3B
+
+# comment: observed color implies
+# comment: O1Y <-> C1Y v C1B
+-O1Y C1Y C1B
+O1Y -C1Y
+O1Y -C1B
+-O1W C1W C1B
+O1W -C1W
+O1W -C1B
+
+-O2Y C2Y C2B
+O2Y -C2Y
+O2Y -C2B
+-O2W C2W C2B
+O2W -C2W
+O2W -C2B
+
+-O3Y C3Y C3B
+O3Y -C3Y
+O3Y -C3B
+-O3W C3W C3B
+O3W -C3W
+O3W -C3B
+
+# comment: the following singleton clause is a 'fact'
+L1W
+L2Y
+L3B
+
+O1Y
+O2W
+O3Y
+
+# comment: the following clause is the -query
+#C2W
