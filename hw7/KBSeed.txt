@@ -1,0 +1,154 @@
+# (1) States, unique location
+# T0_FaL <=> -T0_FaR
+	T0_FaL T0_FaR
+	-T0_FaL -T0_FaR
+
+# T0_FxL <=> -T0_FxR
+	T0_FxL T0_FxR
+	-T0_FxL -T0_FxR
+
+# T0_ChL <=> -T0_ChR
+	T0_ChL T0_ChR
+	-T0_ChL -T0_ChR
+
+# T0_GrL <=> -T0_GrR
+	T0_GrL T0_GrR
+	-T0_GrL -T0_GrR
+
+# (2) Effect axioms
+# T0_mv_Fx_LR => T0_FaL ^ T0_FxL ^ T1_FaR ^ T1_FxR
+	-T0_mv_Fx_LR T0_FaL
+	-T0_mv_Fx_LR T0_FxL
+	-T0_mv_Fx_LR T1_FaR
+	-T0_mv_Fx_LR T1_FxR
+
+# T0_mv_Fx_RL => T0_FaR ^ T0_FxR ^ T1_FaL ^ T1_FxL
+	-T0_mv_Fx_RL T0_FaR
+	-T0_mv_Fx_RL T0_FxR
+	-T0_mv_Fx_RL T1_FaL
+	-T0_mv_Fx_RL T1_FxL
+
+# T0_mv_Ch_LR => T0_FaL ^ T0_ChL ^ T1_FaR ^ T1_ChR
+	-T0_mv_Ch_LR T0_FaL
+	-T0_mv_Ch_LR T0_ChL
+	-T0_mv_Ch_LR T1_FaR
+	-T0_mv_Ch_LR T1_ChR
+
+# T0_mv_Ch_RL => T0_FaR ^ T0_ChR ^ T1_FaL ^ T1_ChL
+	-T0_mv_Ch_RL T0_FaR
+	-T0_mv_Ch_RL T0_ChR
+	-T0_mv_Ch_RL T1_FaL
+	-T0_mv_Ch_RL T1_ChL
+
+# T0_mv_Gr_LR => T0_FaL ^ T0_GrL ^ T1_FaR ^ T1_GrR
+	-T0_mv_Gr_LR T0_FaL
+	-T0_mv_Gr_LR T0_GrL
+	-T0_mv_Gr_LR T1_FaR
+	-T0_mv_Gr_LR T1_GrR
+
+# T0_mv_Gr_RL => T0_FaR ^ T0_GrR ^ T1_FaL ^ T1_GrL
+	-T0_mv_Gr_RL T0_FaR
+	-T0_mv_Gr_RL T0_GrR
+	-T0_mv_Gr_RL T1_FaL
+	-T0_mv_Gr_RL T1_GrL
+
+# T0_mv_No_LR => T0_FaL ^ T1_FaR
+	-T0_mv_No_LR T0_FaL
+	-T0_mv_No_LR T1_FaR
+
+# T0_mv_No_RL => T0_FaR ^ T1_FaL
+	-T0_mv_No_RL T0_FaR 
+	-T0_mv_No_RL T1_FaL
+
+# (3) There should be at least one action
+# T0_mv_Fx_LR v T0_mv_Fx_RL v T0_mv_Ch_LR v T0_mv_Ch_RL v T0_mv_Gr_LR v T0_mv_Gr_RL v T0_mv_No_LR v T0_mv_No_RL
+	T0_mv_Fx_LR T0_mv_Fx_RL T0_mv_Ch_LR T0_mv_Ch_RL T0_mv_Gr_LR T0_mv_Gr_RL T0_mv_No_LR T0_mv_No_RL
+# (4) There should be at most one action
+	-T0_mv_Fx_LR -T0_mv_Fx_RL
+	-T0_mv_Fx_LR -T0_mv_Ch_LR
+	-T0_mv_Fx_LR -T0_mv_Ch_RL
+	-T0_mv_Fx_LR -T0_mv_Gr_LR
+	-T0_mv_Fx_LR -T0_mv_Gr_RL
+	-T0_mv_Fx_LR -T0_mv_No_LR
+	-T0_mv_Fx_LR -T0_mv_No_RL
+
+	-T0_mv_Fx_RL -T0_mv_Ch_LR
+	-T0_mv_Fx_RL -T0_mv_Ch_RL
+	-T0_mv_Fx_RL -T0_mv_Gr_LR
+	-T0_mv_Fx_RL -T0_mv_Gr_RL
+	-T0_mv_Fx_RL -T0_mv_No_LR
+	-T0_mv_Fx_RL -T0_mv_No_RL
+
+	-T0_mv_Ch_LR -T0_mv_Ch_RL
+	-T0_mv_Ch_LR -T0_mv_Gr_LR
+	-T0_mv_Ch_LR -T0_mv_Gr_RL
+	-T0_mv_Ch_LR -T0_mv_No_LR
+	-T0_mv_Ch_LR -T0_mv_No_RL
+
+	-T0_mv_Ch_RL -T0_mv_Gr_LR
+	-T0_mv_Ch_RL -T0_mv_Gr_RL
+	-T0_mv_Ch_RL -T0_mv_No_LR
+	-T0_mv_Ch_RL -T0_mv_No_RL
+
+	-T0_mv_Gr_LR -T0_mv_Gr_RL
+	-T0_mv_Gr_LR -T0_mv_No_LR
+	-T0_mv_Gr_LR -T0_mv_No_RL
+
+	-T0_mv_Gr_RL -T0_mv_No_LR
+	-T0_mv_Gr_RL -T0_mv_No_RL
+
+	-T0_mv_No_LR -T0_mv_No_RL
+
+# (5) Successor-state axioms
+# T1_FxL <=> T0_mv_Fx_RL v (T0_FxL ^ -T0_mv_Fx_LR)
+	-T1_FxL T0_mv_Fx_RL T0_FxL
+	-T1_FxL T0_mv_Fx_RL -T0_mv_Fx_LR
+	-T0_mv_Fx_RL T1_FxL
+	-T0_FxL T0_mv_Fx_LR T1_FxL
+
+# T1_FxR <=> T0_mv_Fx_LR v (T0_FxR ^ -T0_mv_Fx_RL)
+	-T1_FxR T0_mv_Fx_LR T0_FxR
+	-T1_FxR T0_mv_Fx_LR -T0_mv_Fx_RL
+	-T0_mv_Fx_LR T1_FxR
+	-T0_FxR T0_mv_Fx_RL T1_FxR
+
+# T1_ChL <=> T0_mv_Ch_RL v (T0_ChL ^ -T0_mv_Ch_LR)
+	-T1_ChL T0_mv_Ch_RL T0_ChL
+	-T1_ChL T0_mv_Ch_RL -T0_mv_Ch_LR
+	-T0_mv_Ch_RL T1_ChL
+	-T0_ChL T0_mv_Ch_LR T1_ChL
+
+# T1_ChR <=> T0_mv_Ch_LR v (T0_ChR ^ -T0_mv_Ch_RL)
+	-T1_ChR T0_mv_Ch_LR T0_ChR
+	-T1_ChR T0_mv_Ch_LR -T0_mv_Ch_RL
+	-T0_mv_Ch_LR T1_ChR
+	-T0_ChR T0_mv_Ch_RL T1_ChR
+
+# T1_GrL <=> T0_mv_Gr_RL v (T0_GrL ^ -T0_mv_Gr_LR)
+	-T1_GrL T0_mv_Gr_RL T0_GrL
+	-T1_GrL T0_mv_Gr_RL -T0_mv_Gr_LR
+	-T0_mv_Gr_RL T1_GrL
+	-T0_GrL T0_mv_Gr_LR T1_GrL
+
+# T1_GrR <=> T0_mv_Gr_LR v (T0_GrR ^ -T0_mv_Gr_RL)
+	-T1_GrR T0_mv_Gr_LR T0_GrR
+	-T1_GrR T0_mv_Gr_LR -T0_mv_Gr_RL
+	-T0_mv_Gr_LR T1_GrR
+	-T0_GrR T0_mv_Gr_RL T1_GrR
+
+# T0_FaL <=> -T1_FaL
+	-T0_FaL -T1_FaL
+	T1_FaL T0_FaL
+
+# (6) Eat
+# T0_FxL ^ T0_ChL => T0_FaL
+	-T0_FxL -T0_ChL T0_FaL
+
+# T0_FxR ^ T0_ChR => T0_FaR
+	-T0_FxR -T0_ChR T0_FaR
+
+# T0_GrL ^ T0_ChL => T0_FaL
+	-T0_GrL -T0_ChL T0_FaL
+
+# T0_GrR ^ T0_ChR => T0_FaR
+	-T0_GrR -T0_ChR T0_FaR
