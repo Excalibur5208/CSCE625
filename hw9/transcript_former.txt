@@ -1,0 +1,3613 @@
+on(a,c)
+initiating goal regression...
+
+iter=1, queue=1
+ context:
+ goal stack: on(a,c)
+ considering using puton(a,c) to achieve on(a,c)
+
+iter=2, queue=1
+ context:
+ goal stack: holding(a), clear(c)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=3, queue=4
+ context:
+ goal stack: clear(a), clear(c), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,d) to achieve gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,b) to achieve clear(c) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=4, queue=9
+ context:
+ goal stack: clear(a), on(a,c), gripper_empty()
+ considering using puton(b,d) to achieve gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(b,c) to achieve gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(d,b) to achieve gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=5, queue=14
+solution found!
+plan;
+puton(a,c)
+pickup(a,b)
+-------------------------------------------------
+on(b,a)
+initiating goal regression...
+
+iter=1, queue=1
+ context:
+ goal stack: on(b,a)
+ considering using puton(b,a) to achieve on(b,a)
+
+iter=2, queue=1
+ context:
+ goal stack: clear(a), holding(b)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+ considering using pickup(b,c) to achieve holding(b)
+
+iter=3, queue=4
+ context:
+ goal stack: clear(a), on(b,table), clear(b), gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty()
+ considering using puton(a,c) to achieve clear(a) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=4, queue=10
+ context:
+ goal stack: clear(a), clear(b), on(b,d), gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+ considering using puton(a,c) to achieve clear(a) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=5, queue=15
+ context:
+ goal stack: clear(b), gripper_empty(), on(b,a)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+ considering using puton(c,a) to achieve gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(d,a) to achieve gripper_empty()
+
+iter=6, queue=20
+ context:
+ goal stack: clear(a), clear(b), on(b,c), gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty()
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty()
+ considering using puton(a,c) to achieve clear(a) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=7, queue=25
+ context:
+ goal stack: holding(a), on(b,table), clear(b), clear(d)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+
+iter=8, queue=28
+ context:
+ goal stack: clear(a), on(b,table), clear(b), holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+
+iter=9, queue=31
+ context:
+ goal stack: clear(a), on(b,table), clear(b), clear(d), holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+
+iter=10, queue=33
+ context:
+ goal stack: clear(a), clear(c), on(b,table), clear(b), holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=11, queue=36
+ context:
+ goal stack: holding(a), clear(c), on(b,table), clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+
+iter=12, queue=39
+ context:
+ goal stack: clear(a), on(b,table), clear(b), holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=13, queue=41
+ context:
+ goal stack: holding(a), on(b,table), clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a)
+
+iter=14, queue=42
+ context:
+ goal stack: holding(a), clear(b), on(b,d), clear(d)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+
+iter=15, queue=45
+ context:
+ goal stack: clear(a), clear(b), on(b,d), holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+
+iter=16, queue=48
+ context:
+ goal stack: clear(a), clear(b), on(b,d), clear(d), holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+
+iter=17, queue=50
+ context:
+ goal stack: holding(a), clear(c), clear(b), on(b,d)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+
+iter=18, queue=53
+ context:
+ goal stack: clear(a), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+ considering using pickup(b,c) to achieve holding(b)
+
+iter=19, queue=55
+ context:
+ goal stack: holding(a), clear(b), on(b,d)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a)
+
+iter=20, queue=56
+ context:
+ goal stack: clear(b), on(b,a), holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+ considering using pickup(c,a) to achieve holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+
+iter=21, queue=59
+ context:
+ goal stack: clear(b), clear(d), on(b,a), holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+ considering using pickup(c,a) to achieve holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+
+iter=22, queue=61
+ context:
+ goal stack: clear(c), clear(b), holding(d), on(b,a)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=23, queue=64
+ context:
+ goal stack: clear(a), clear(b), on(b,a), holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+
+iter=24, queue=66
+ context:
+ goal stack: clear(b), holding(d), on(b,a)
+ considering using pickup(d,c) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=25, queue=68
+ context:
+ goal stack: clear(a), clear(b), holding(d), on(b,a)
+ considering using pickup(d,c) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=26, queue=70
+ context:
+ goal stack: holding(a), clear(b), clear(d), on(b,c)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+
+iter=27, queue=73
+ context:
+ goal stack: clear(a), clear(c), holding(b)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+
+iter=28, queue=75
+ context:
+ goal stack: clear(a), clear(c), clear(b), holding(d), on(b,c)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=29, queue=78
+ context:
+ goal stack: holding(a), clear(c), clear(b), on(b,c)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+
+iter=30, queue=81
+ context:
+ goal stack: clear(a), clear(b), holding(d), on(b,c)
+ considering using pickup(d,c) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=31, queue=83
+ context:
+ goal stack: holding(a), clear(b), on(b,c)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a)
+
+iter=32, queue=84
+ context:
+ goal stack: clear(a), on(a,table), on(b,table), clear(b), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty() clear(d)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+
+iter=33, queue=87
+ context:
+ goal stack: clear(a), on(a,b), on(b,table), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty() clear(d)
+ considering using puton(d,b) to achieve gripper_empty() clear(d)
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(c,b) to achieve gripper_empty()
+
+iter=34, queue=91
+ context:
+ goal stack: clear(a), on(b,table), clear(b), gripper_empty(), on(a,d)
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=35, queue=93
+ context:
+ goal stack: clear(a), on(a,c), on(b,table), clear(b), gripper_empty(), clear(d)
+ considering using puton(d,c) to achieve gripper_empty() clear(d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+
+iter=36, queue=96
+ context:
+ goal stack: clear(a), clear(c), on(b,table), clear(b), on(c,table), gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=37, queue=99
+ context:
+ goal stack: clear(c), on(b,table), clear(b), on(c,a), gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(d,a) to achieve gripper_empty()
+
+iter=38, queue=101
+ context:
+ goal stack: clear(a), on(c,b), clear(c), on(b,table), gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty()
+ considering using puton(d,b) to achieve gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(a,b) to achieve clear(a) gripper_empty()
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=39, queue=105
+ context:
+ goal stack: clear(a), clear(c), on(b,table), clear(b), gripper_empty(), on(c,d)
+ considering using puton(a,d) to achieve clear(a) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=40, queue=107
+ context:
+ goal stack: clear(a), clear(c), on(b,table), clear(b), on(c,table), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=41, queue=107
+ context:
+ goal stack: clear(c), on(b,table), clear(b), on(c,a), gripper_empty(), clear(d)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(d,a) to achieve gripper_empty() clear(d)
+
+iter=42, queue=107
+ context:
+ goal stack: clear(a), on(c,b), clear(c), on(b,table), gripper_empty(), clear(d)
+ considering using puton(d,b) to achieve gripper_empty() clear(d)
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(a,b) to achieve clear(a) gripper_empty()
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=43, queue=107
+ context:
+ goal stack: clear(a), on(b,table), clear(b), clear(d), gripper_empty(), on(d,c)
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+ considering using puton(a,c) to achieve clear(a) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=44, queue=109
+ context:
+ goal stack: clear(a), on(b,table), clear(c), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=45, queue=111
+ context:
+ goal stack: on(d,a), on(b,table), clear(c), clear(b), clear(d), gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+
+iter=46, queue=113
+ context:
+ goal stack: on(d,b), clear(a), on(b,table), clear(c), clear(d), gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+ considering using puton(a,b) to achieve clear(a) gripper_empty()
+ considering using puton(c,b) to achieve clear(c) gripper_empty()
+ considering using puton(a,table) to achieve clear(a) gripper_empty()
+
+iter=47, queue=116
+ context:
+ goal stack: clear(a), on(a,table), on(b,table), clear(c), clear(b), gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+
+iter=48, queue=117
+solution found!
+plan;
+puton(b,a)
+pickup(b,table)
+puton(a,c)
+pickup(a,b)
+-------------------------------------------------
+on(a,c) holding(b)
+initiating goal regression...
+
+iter=1, queue=1
+ context:
+ goal stack: on(a,c), holding(b)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=2, queue=4
+ context:
+ goal stack: on(a,c), on(b,table), clear(b), gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty()
+ considering using puton(a,c) to achieve on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(d,a) to achieve gripper_empty()
+
+iter=3, queue=8
+ context:
+ goal stack: on(a,c), clear(b), on(b,d), gripper_empty()
+ considering using puton(a,c) to achieve on(a,c) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+
+iter=4, queue=9
+ context:
+ goal stack: on(a,c), clear(b), on(b,c), gripper_empty()
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty()
+ considering using puton(a,c) to achieve on(a,c) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(d,a) to achieve gripper_empty()
+
+iter=5, queue=13
+ context:
+ goal stack: on(a,c), clear(b), gripper_empty(), on(b,a)
+ considering using puton(d,c) to achieve gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(d,a) to achieve gripper_empty()
+
+iter=6, queue=16
+ context:
+ goal stack: on(a,c), clear(c), on(b,table), clear(b), holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=7, queue=19
+ context:
+ goal stack: holding(a), clear(c), on(b,table), clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+
+iter=8, queue=22
+ context:
+ goal stack: on(a,c), holding(b)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=9, queue=21
+ context:
+ goal stack: on(a,c), on(b,table), clear(b), holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=10, queue=23
+ context:
+ goal stack: clear(a), on(a,c), on(b,table), clear(b), holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=11, queue=25
+ context:
+ goal stack: holding(a), clear(c), clear(b), on(b,d)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+
+iter=12, queue=28
+ context:
+ goal stack: on(a,c), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=13, queue=30
+ context:
+ goal stack: on(a,c), clear(c), holding(b)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=14, queue=32
+ context:
+ goal stack: on(a,c), clear(c), clear(b), holding(d), on(b,c)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=15, queue=35
+ context:
+ goal stack: holding(a), clear(c), clear(b), on(b,c)
+ considering using pickup(a,table) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+
+iter=16, queue=38
+ context:
+ goal stack: on(a,c), clear(b), holding(d), on(b,c)
+ considering using pickup(d,c) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=17, queue=40
+ context:
+ goal stack: clear(a), on(a,c), clear(b), holding(d), on(b,c)
+ considering using pickup(d,c) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=18, queue=42
+ context:
+ goal stack: on(a,c), clear(c), clear(b), holding(d), on(b,a)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=19, queue=45
+ context:
+ goal stack: clear(a), on(a,c), holding(b)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=20, queue=44
+ context:
+ goal stack: on(a,c), clear(b), holding(d), on(b,a)
+ considering using pickup(d,c) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=21, queue=46
+ context:
+ goal stack: clear(a), on(a,c), clear(b), holding(d), on(b,a)
+ considering using pickup(d,c) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+
+iter=22, queue=48
+ context:
+ goal stack: on(a,c), on(b,table), clear(b), clear(d), gripper_empty(), on(d,c)
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+ considering using puton(a,c) to achieve on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=23, queue=49
+ context:
+ goal stack: on(a,c), on(b,table), clear(c), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+
+iter=24, queue=49
+ context:
+ goal stack: on(a,c), on(d,a), on(b,table), clear(c), clear(b), clear(d), gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+
+iter=25, queue=50
+ context:
+ goal stack: on(d,b), on(a,c), on(b,table), clear(c), clear(d), gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+
+iter=26, queue=49
+ context:
+ goal stack: clear(a), on(a,table), on(b,table), clear(c), clear(b), gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty()
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+
+iter=27, queue=52
+solution found!
+plan;
+pickup(b,table)
+puton(a,c)
+pickup(a,b)
+-------------------------------------------------
+on(a,d)
+initiating goal regression...
+
+iter=1, queue=1
+ context:
+ goal stack: on(a,d)
+ considering using puton(a,d) to achieve on(a,d)
+
+iter=2, queue=1
+ context:
+ goal stack: holding(a), clear(d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=3, queue=4
+ context:
+ goal stack: clear(a), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(b,d) to achieve gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(b,c) to achieve gripper_empty()
+ considering using puton(c,b) to achieve gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=4, queue=9
+ context:
+ goal stack: clear(a), on(a,c), gripper_empty(), clear(d)
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(b,c) to achieve gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty() clear(d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(d,b) to achieve gripper_empty() clear(d)
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=5, queue=14
+ context:
+ goal stack: clear(a), on(a,b), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(c,b) to achieve gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty() clear(d)
+ considering using puton(d,b) to achieve gripper_empty() clear(d)
+
+iter=6, queue=19
+ context:
+ goal stack: clear(a), on(a,table), gripper_empty(), clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(b,c) to achieve gripper_empty()
+ considering using puton(c,b) to achieve gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty() clear(d)
+ considering using puton(d,b) to achieve gripper_empty() clear(d)
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=7, queue=25
+ context:
+ goal stack: clear(a), holding(c), on(a,d)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=8, queue=28
+ context:
+ goal stack: clear(a), holding(b), clear(d), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=9, queue=31
+ context:
+ goal stack: clear(a), clear(c), holding(b), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=10, queue=34
+ context:
+ goal stack: clear(a), clear(b), holding(c), on(a,d)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=11, queue=36
+ context:
+ goal stack: clear(a), clear(d), holding(c), on(a,d)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=12, queue=38
+ context:
+ goal stack: clear(a), holding(b), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=13, queue=39
+ context:
+ goal stack: clear(a), on(a,c), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=14, queue=42
+ context:
+ goal stack: clear(a), on(a,c), clear(c), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=15, queue=45
+ context:
+ goal stack: clear(a), on(a,c), clear(c), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=16, queue=47
+ context:
+ goal stack: holding(a), clear(c), clear(d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=17, queue=49
+ context:
+ goal stack: clear(a), on(a,c), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=18, queue=51
+ context:
+ goal stack: clear(a), on(a,c), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=19, queue=53
+ context:
+ goal stack: clear(a), on(a,b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=20, queue=56
+ context:
+ goal stack: holding(a), clear(b), clear(d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=21, queue=58
+ context:
+ goal stack: clear(a), on(a,b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=22, queue=61
+ context:
+ goal stack: clear(a), on(a,b), clear(b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=23, queue=63
+ context:
+ goal stack: clear(a), on(a,b), clear(c), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=24, queue=65
+ context:
+ goal stack: clear(a), on(a,b), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=25, queue=67
+ context:
+ goal stack: clear(a), on(a,table), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=26, queue=70
+ context:
+ goal stack: clear(a), on(a,table), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=27, queue=73
+ context:
+ goal stack: clear(a), on(a,table), clear(c), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=28, queue=76
+ context:
+ goal stack: clear(a), on(a,table), clear(b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=29, queue=78
+ context:
+ goal stack: clear(a), on(a,table), clear(c), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=30, queue=80
+ context:
+ goal stack: clear(a), on(a,table), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=31, queue=82
+ context:
+ goal stack: clear(a), on(a,table), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=32, queue=84
+ context:
+ goal stack: clear(c), on(c,a), gripper_empty(), on(a,d)
+ considering using puton(b,d) to achieve gripper_empty()
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+ considering using puton(b,a) to achieve gripper_empty()
+
+iter=33, queue=86
+ context:
+ goal stack: clear(a), on(c,b), clear(c), gripper_empty(), on(a,d)
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=34, queue=86
+ context:
+ goal stack: clear(a), clear(c), gripper_empty(), on(c,d), on(a,d)
+ considering using puton(b,d) to achieve gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=35, queue=88
+ context:
+ goal stack: clear(a), clear(c), on(c,table), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(b,d) to achieve gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=36, queue=90
+ context:
+ goal stack: clear(a), on(b,table), clear(b), gripper_empty(), clear(d), on(a,d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=37, queue=90
+ context:
+ goal stack: clear(a), clear(b), on(b,d), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve gripper_empty()
+
+iter=38, queue=92
+ context:
+ goal stack: clear(a), clear(b), on(b,c), gripper_empty(), clear(d), on(a,d)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+
+iter=39, queue=92
+ context:
+ goal stack: clear(b), gripper_empty(), clear(d), on(b,a), on(a,d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,a) to achieve gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=40, queue=93
+ context:
+ goal stack: clear(a), on(b,table), clear(c), clear(b), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=41, queue=94
+ context:
+ goal stack: clear(a), clear(c), clear(b), on(b,d), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+
+iter=42, queue=94
+ context:
+ goal stack: clear(a), clear(b), on(b,c), gripper_empty(), on(a,d)
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+
+iter=43, queue=94
+ context:
+ goal stack: clear(c), clear(b), gripper_empty(), on(b,a), on(a,d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=44, queue=95
+ context:
+ goal stack: clear(c), clear(b), on(c,a), gripper_empty(), on(a,d)
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=45, queue=94
+ context:
+ goal stack: clear(a), clear(c), clear(b), gripper_empty(), on(c,d), on(a,d)
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=46, queue=95
+ context:
+ goal stack: clear(a), clear(c), clear(b), on(c,table), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=47, queue=95
+ context:
+ goal stack: clear(c), on(c,a), gripper_empty(), clear(d), on(a,d)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+ considering using puton(b,a) to achieve gripper_empty()
+
+iter=48, queue=95
+ context:
+ goal stack: clear(a), on(c,b), clear(c), gripper_empty(), clear(d), on(a,d)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=49, queue=94
+ context:
+ goal stack: clear(a), clear(c), on(c,table), gripper_empty(), clear(d), on(a,d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=50, queue=93
+ context:
+ goal stack: clear(a), on(b,table), clear(b), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=51, queue=93
+ context:
+ goal stack: clear(b), gripper_empty(), on(b,a), on(a,d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,a) to achieve gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=52, queue=92
+ context:
+ goal stack: on(a,c), on(d,a), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(b,c) to achieve gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+ considering using puton(b,a) to achieve gripper_empty()
+
+iter=53, queue=94
+ context:
+ goal stack: clear(a), on(a,c), clear(d), gripper_empty(), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(b,c) to achieve gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=54, queue=96
+ context:
+ goal stack: on(d,b), clear(a), on(a,c), clear(d), gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+
+iter=55, queue=96
+ context:
+ goal stack: clear(a), on(a,c), clear(d), gripper_empty(), on(d,c)
+ considering using puton(b,c) to achieve gripper_empty()
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=56, queue=98
+ context:
+ goal stack: clear(a), on(a,c), on(b,table), clear(c), clear(b), gripper_empty(), clear(d)
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=57, queue=98
+ context:
+ goal stack: clear(a), on(a,c), clear(c), clear(b), on(b,d), gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+
+iter=58, queue=97
+ context:
+ goal stack: clear(a), on(a,c), clear(b), on(b,c), gripper_empty(), clear(d)
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty() clear(d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=59, queue=99
+ context:
+ goal stack: on(a,c), clear(c), clear(b), gripper_empty(), clear(d), on(b,a)
+ considering using puton(d,a) to achieve gripper_empty() clear(d)
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=60, queue=100
+ context:
+ goal stack: on(a,c), on(d,a), clear(c), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+ considering using puton(b,a) to achieve gripper_empty()
+
+iter=61, queue=100
+ context:
+ goal stack: clear(a), on(a,c), clear(c), clear(d), gripper_empty(), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=62, queue=99
+ context:
+ goal stack: on(d,b), clear(a), on(a,c), clear(c), clear(d), gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+
+iter=63, queue=99
+ context:
+ goal stack: clear(a), clear(c), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,d) to achieve gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,b) to achieve clear(c) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=64, queue=98
+ context:
+ goal stack: clear(a), on(a,b), clear(c), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(c,b) to achieve clear(c) gripper_empty()
+ considering using puton(d,b) to achieve gripper_empty() clear(d)
+
+iter=65, queue=99
+ context:
+ goal stack: clear(a), on(a,table), clear(c), gripper_empty(), clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(c,b) to achieve clear(c) gripper_empty()
+ considering using puton(d,b) to achieve gripper_empty() clear(d)
+ considering using puton(b,table) to achieve gripper_empty()
+
+iter=66, queue=99
+ context:
+ goal stack: on(a,c), on(d,a), clear(b), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=67, queue=98
+ context:
+ goal stack: clear(a), on(a,c), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=68, queue=98
+ context:
+ goal stack: clear(a), on(a,c), clear(b), clear(d), gripper_empty(), on(d,c)
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=69, queue=98
+ context:
+ goal stack: clear(a), on(a,c), on(b,table), clear(b), gripper_empty(), clear(d)
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(d,c) to achieve gripper_empty() clear(d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=70, queue=98
+ context:
+ goal stack: clear(a), on(a,c), clear(b), on(b,d), gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=71, queue=98
+ context:
+ goal stack: on(a,c), clear(b), gripper_empty(), clear(d), on(b,a)
+ considering using puton(d,a) to achieve gripper_empty() clear(d)
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(d,c) to achieve gripper_empty() clear(d)
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=72, queue=99
+ context:
+ goal stack: on(a,b), clear(c), on(c,a), gripper_empty(), clear(d)
+ considering using puton(d,a) to achieve gripper_empty() clear(d)
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(d,b) to achieve gripper_empty() clear(d)
+
+iter=73, queue=101
+ context:
+ goal stack: clear(a), on(a,b), on(c,b), clear(c), gripper_empty(), clear(d)
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+ considering using puton(d,b) to achieve gripper_empty() clear(d)
+
+iter=74, queue=103
+solution found!
+plan;
+puton(a,d)
+pickup(a,b)
+puton(c,table)
+pickup(c,d)
+-------------------------------------------------
+on(a,d) on(d,b)
+initiating goal regression...
+
+iter=1, queue=1
+ context:
+ goal stack: on(d,b), on(a,d)
+ considering using puton(a,d) to achieve on(a,d)
+
+iter=2, queue=1
+ context:
+ goal stack: on(d,b), holding(a), clear(d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=3, queue=4
+ context:
+ goal stack: clear(a), on(d,b), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,b) to achieve gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+
+iter=4, queue=6
+ context:
+ goal stack: clear(a), on(d,b), on(a,c), gripper_empty(), clear(d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=5, queue=7
+ context:
+ goal stack: clear(a), on(d,b), on(a,b), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(c,b) to achieve gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=6, queue=10
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), gripper_empty(), clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,b) to achieve gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=7, queue=12
+ context:
+ goal stack: on(d,b), clear(a), holding(c), on(a,d)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=8, queue=15
+ context:
+ goal stack: on(d,b), clear(a), clear(b), holding(c), on(a,d)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=9, queue=17
+ context:
+ goal stack: on(d,b), clear(a), clear(d), holding(c), on(a,d)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=10, queue=19
+ context:
+ goal stack: on(d,b), holding(a), clear(c), clear(d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=11, queue=21
+ context:
+ goal stack: clear(a), on(a,c), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=12, queue=23
+ context:
+ goal stack: on(d,b), clear(a), on(a,b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=13, queue=26
+ context:
+ goal stack: on(d,b), holding(a), clear(b), clear(d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=14, queue=28
+ context:
+ goal stack: on(d,b), clear(a), on(a,b), clear(b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=15, queue=30
+ context:
+ goal stack: clear(a), on(a,b), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=16, queue=32
+ context:
+ goal stack: on(d,b), clear(a), on(a,table), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=17, queue=35
+ context:
+ goal stack: on(d,b), clear(a), on(a,table), clear(b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=18, queue=37
+ context:
+ goal stack: clear(a), on(a,table), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=19, queue=39
+ context:
+ goal stack: on(d,b), clear(c), on(c,a), gripper_empty(), on(a,d)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+
+iter=20, queue=38
+ context:
+ goal stack: clear(a), on(d,b), on(c,b), clear(c), gripper_empty(), on(a,d)
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=21, queue=38
+ context:
+ goal stack: clear(a), on(d,b), clear(c), gripper_empty(), on(c,d), on(a,d)
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+
+iter=22, queue=38
+ context:
+ goal stack: clear(a), on(d,b), clear(c), on(c,table), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+
+iter=23, queue=38
+ context:
+ goal stack: on(d,b), clear(c), clear(b), on(c,a), gripper_empty(), on(a,d)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+
+iter=24, queue=37
+ context:
+ goal stack: clear(a), on(d,b), clear(c), clear(b), gripper_empty(), on(c,d), on(a,d)
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+
+iter=25, queue=38
+ context:
+ goal stack: clear(a), on(d,b), clear(c), clear(b), on(c,table), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+
+iter=26, queue=38
+ context:
+ goal stack: on(d,b), clear(c), on(c,a), gripper_empty(), clear(d), on(a,d)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+
+iter=27, queue=37
+ context:
+ goal stack: clear(a), on(d,b), on(c,b), clear(c), gripper_empty(), clear(d), on(a,d)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=28, queue=36
+ context:
+ goal stack: clear(a), on(d,b), clear(c), on(c,table), gripper_empty(), clear(d), on(a,d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+
+iter=29, queue=35
+ context:
+ goal stack: clear(a), on(d,b), clear(c), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,b) to achieve clear(c) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+
+iter=30, queue=34
+ context:
+ goal stack: clear(a), on(d,b), on(a,b), clear(c), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(c,b) to achieve clear(c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=31, queue=35
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), clear(c), gripper_empty(), clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(c,b) to achieve clear(c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=32, queue=35
+ context:
+ goal stack: on(a,c), on(d,a), clear(b), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=33, queue=37
+ context:
+ goal stack: clear(a), on(a,c), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=34, queue=39
+ context:
+ goal stack: clear(a), on(a,c), clear(b), clear(d), gripper_empty(), on(d,c)
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=35, queue=42
+ context:
+ goal stack: on(d,b), on(a,b), clear(c), on(c,a), gripper_empty(), clear(d)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=36, queue=42
+ context:
+ goal stack: clear(a), on(d,b), on(a,b), on(c,b), clear(c), gripper_empty(), clear(d)
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=37, queue=43
+ context:
+ goal stack: clear(a), on(d,b), on(a,b), clear(c), gripper_empty(), on(c,d)
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+
+iter=38, queue=43
+ context:
+ goal stack: clear(a), on(d,b), on(a,b), clear(c), on(c,table), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=39, queue=43
+ context:
+ goal stack: clear(a), on(d,b), clear(b), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve gripper_empty()
+
+iter=40, queue=42
+ context:
+ goal stack: clear(a), on(d,b), on(a,c), clear(b), gripper_empty(), clear(d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=41, queue=41
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), clear(b), gripper_empty(), clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+
+iter=42, queue=40
+ context:
+ goal stack: on(d,b), on(a,b), clear(c), clear(b), on(c,a), gripper_empty(), clear(d)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+
+iter=43, queue=39
+ context:
+ goal stack: clear(a), on(d,b), on(a,b), clear(c), clear(b), gripper_empty(), on(c,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+
+iter=44, queue=38
+ context:
+ goal stack: clear(a), on(d,b), on(a,b), clear(c), clear(b), on(c,table), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+
+iter=45, queue=37
+ context:
+ goal stack: on(a,b), on(d,a), clear(b), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,a) to achieve gripper_empty()
+
+iter=46, queue=38
+ context:
+ goal stack: clear(a), on(a,b), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+
+iter=47, queue=38
+ context:
+ goal stack: clear(a), on(a,b), clear(b), clear(d), gripper_empty(), on(d,c)
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+
+iter=48, queue=37
+ context:
+ goal stack: on(d,b), on(a,table), clear(c), on(c,a), gripper_empty(), clear(d)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=49, queue=37
+ context:
+ goal stack: clear(a), on(d,b), on(c,b), on(a,table), clear(c), gripper_empty(), clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=50, queue=37
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), clear(c), gripper_empty(), on(c,d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+
+iter=51, queue=37
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), clear(c), on(c,table), gripper_empty(), clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=52, queue=37
+ context:
+ goal stack: on(d,b), on(a,table), clear(c), clear(b), on(c,a), gripper_empty(), clear(d)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+
+iter=53, queue=36
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), clear(c), clear(b), gripper_empty(), on(c,d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+
+iter=54, queue=35
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), clear(c), clear(b), on(c,table), gripper_empty(), clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+
+iter=55, queue=34
+ context:
+ goal stack: on(d,a), on(a,table), clear(b), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,a) to achieve gripper_empty()
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=56, queue=38
+ context:
+ goal stack: clear(a), on(a,table), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=57, queue=41
+ context:
+ goal stack: clear(a), on(a,table), clear(b), clear(d), gripper_empty(), on(d,c)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=58, queue=43
+ context:
+ goal stack: on(d,b), holding(a), on(c,b), clear(c), clear(d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=59, queue=43
+ context:
+ goal stack: on(d,b), holding(a), clear(c), clear(d), on(c,d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=60, queue=45
+ context:
+ goal stack: on(d,b), holding(a), clear(c), clear(d), on(c,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=61, queue=45
+ context:
+ goal stack: on(d,b), holding(a), clear(c), clear(b), clear(d), on(c,d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=62, queue=46
+ context:
+ goal stack: on(d,b), clear(a), clear(b), clear(d), holding(c), on(a,d)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=63, queue=47
+ context:
+ goal stack: on(d,b), holding(a), clear(c), clear(b), clear(d), on(c,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=64, queue=47
+ context:
+ goal stack: on(d,b), holding(a), clear(c), clear(b), clear(d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=65, queue=48
+ context:
+ goal stack: clear(a), on(a,b), clear(c), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=66, queue=49
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=67, queue=50
+ context:
+ goal stack: on(a,c), on(d,a), clear(c), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=68, queue=53
+ context:
+ goal stack: on(a,c), on(d,a), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=69, queue=55
+ context:
+ goal stack: clear(a), on(a,c), on(d,a), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=70, queue=57
+ context:
+ goal stack: clear(a), on(a,c), clear(c), holding(b), clear(d), on(d,table)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=71, queue=60
+ context:
+ goal stack: holding(a), clear(c), clear(b), clear(d), on(d,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=72, queue=61
+ context:
+ goal stack: clear(a), on(a,c), holding(b), clear(d), on(d,table)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=73, queue=63
+ context:
+ goal stack: clear(a), on(a,c), clear(c), holding(b), clear(d), on(d,c)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=74, queue=66
+ context:
+ goal stack: clear(a), on(a,c), clear(c), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=75, queue=68
+ context:
+ goal stack: holding(a), clear(c), clear(b), clear(d), on(d,c)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=76, queue=70
+ context:
+ goal stack: clear(a), on(a,c), holding(b), clear(d), on(d,c)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=77, queue=72
+ context:
+ goal stack: on(a,b), clear(c), clear(b), holding(d), on(c,a)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=78, queue=74
+ context:
+ goal stack: on(d,b), holding(a), on(c,b), clear(c), clear(b), clear(d)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=79, queue=76
+ context:
+ goal stack: clear(a), on(a,b), on(c,b), clear(c), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=80, queue=78
+ context:
+ goal stack: on(d,b), holding(a), clear(c), clear(b), on(c,d)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=81, queue=78
+ context:
+ goal stack: clear(a), on(a,b), clear(c), clear(b), holding(d), on(c,table)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=82, queue=80
+ context:
+ goal stack: on(a,b), on(d,a), clear(b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=83, queue=81
+ context:
+ goal stack: clear(a), on(a,b), on(d,a), clear(b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=84, queue=83
+ context:
+ goal stack: clear(a), on(a,b), clear(b), clear(d), holding(c), on(d,table)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=85, queue=84
+ context:
+ goal stack: on(a,table), clear(c), clear(b), holding(d), on(c,a)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=86, queue=86
+ context:
+ goal stack: clear(a), on(a,table), on(c,b), clear(c), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=87, queue=88
+ context:
+ goal stack: on(d,b), holding(a), clear(c), on(c,d)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=88, queue=88
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), holding(d), on(c,table)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=89, queue=90
+ context:
+ goal stack: on(d,a), on(a,table), clear(b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=90, queue=91
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=91, queue=93
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=92, queue=96
+ context:
+ goal stack: on(d,a), on(a,table), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=93, queue=98
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=94, queue=100
+ context:
+ goal stack: holding(a), clear(b), clear(d), on(d,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=95, queue=101
+ context:
+ goal stack: clear(a), on(a,table), clear(b), clear(d), holding(c), on(d,table)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=96, queue=102
+ context:
+ goal stack: clear(a), on(a,table), clear(c), holding(b), clear(d), on(d,table)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=97, queue=105
+ context:
+ goal stack: clear(a), on(a,table), holding(b), clear(d), on(d,table)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=98, queue=107
+ context:
+ goal stack: holding(a), clear(b), clear(d), on(d,c)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=99, queue=108
+ context:
+ goal stack: clear(a), on(a,table), clear(c), holding(b), clear(d), on(d,c)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=100, queue=111
+ context:
+ goal stack: clear(a), on(a,table), holding(b), clear(d), on(d,c)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=101, queue=113
+ context:
+ goal stack: clear(a), on(d,b), on(a,c), on(c,b), gripper_empty(), clear(d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=102, queue=113
+ context:
+ goal stack: clear(a), on(d,b), on(a,c), gripper_empty(), clear(d), on(c,d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=103, queue=112
+ context:
+ goal stack: clear(a), on(d,b), on(a,b), clear(c), gripper_empty(), clear(d), on(c,d)
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+
+iter=104, queue=111
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), clear(c), gripper_empty(), clear(d), on(c,d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+
+iter=105, queue=110
+ context:
+ goal stack: clear(a), on(d,b), on(a,c), gripper_empty(), on(c,table), clear(d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) gripper_empty() clear(d)
+
+iter=106, queue=110
+ context:
+ goal stack: clear(a), on(d,b), on(a,c), clear(b), gripper_empty(), clear(d), on(c,d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=107, queue=109
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), clear(c), clear(b), gripper_empty(), clear(d), on(c,d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+
+iter=108, queue=108
+ context:
+ goal stack: on(d,b), clear(c), clear(b), on(c,a), gripper_empty(), clear(d), on(a,d)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+
+iter=109, queue=107
+ context:
+ goal stack: clear(a), on(d,b), clear(c), clear(b), on(c,table), gripper_empty(), clear(d), on(a,d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+
+iter=110, queue=106
+ context:
+ goal stack: clear(a), on(d,b), on(a,c), clear(b), gripper_empty(), on(c,table), clear(d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=111, queue=105
+ context:
+ goal stack: clear(a), on(d,b), clear(c), clear(b), gripper_empty(), on(a,d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+
+iter=112, queue=104
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), clear(c), clear(b), gripper_empty(), clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+
+iter=113, queue=103
+ context:
+ goal stack: on(a,b), on(d,a), clear(c), clear(b), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) gripper_empty()
+
+iter=114, queue=102
+ context:
+ goal stack: clear(a), on(a,b), clear(c), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+
+iter=115, queue=101
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), clear(b), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=116, queue=101
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=117, queue=100
+ context:
+ goal stack: on(a,c), on(d,a), on(b,table), clear(c), clear(b), gripper_empty(), clear(d)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=118, queue=100
+ context:
+ goal stack: on(a,c), on(d,a), clear(c), clear(b), on(b,d), gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+
+iter=119, queue=99
+ context:
+ goal stack: on(a,c), on(d,a), clear(b), on(b,c), gripper_empty(), clear(d)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+
+iter=120, queue=99
+ context:
+ goal stack: on(a,c), on(d,a), clear(c), clear(b), gripper_empty(), clear(d), on(b,a)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=121, queue=100
+ context:
+ goal stack: on(a,c), on(d,a), on(b,table), clear(b), gripper_empty(), clear(d)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=122, queue=100
+ context:
+ goal stack: on(a,c), on(d,a), clear(b), on(b,d), gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+
+iter=123, queue=99
+ context:
+ goal stack: on(a,c), on(d,a), clear(b), gripper_empty(), clear(d), on(b,a)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=124, queue=99
+ context:
+ goal stack: clear(a), on(a,c), on(d,a), on(b,table), clear(b), gripper_empty(), clear(d)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=125, queue=98
+ context:
+ goal stack: clear(a), on(a,c), on(d,a), clear(b), on(b,d), gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+
+iter=126, queue=97
+ context:
+ goal stack: clear(a), on(a,c), on(d,a), clear(b), on(b,c), gripper_empty(), clear(d)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+
+iter=127, queue=96
+ context:
+ goal stack: clear(a), on(a,c), on(b,table), clear(c), clear(b), gripper_empty(), clear(d), on(d,table)
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=128, queue=95
+ context:
+ goal stack: clear(a), on(a,c), clear(c), clear(b), on(b,d), gripper_empty(), on(d,table)
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+
+iter=129, queue=94
+ context:
+ goal stack: clear(a), on(a,c), clear(b), on(b,c), gripper_empty(), clear(d), on(d,table)
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=130, queue=94
+ context:
+ goal stack: on(a,c), clear(c), clear(b), gripper_empty(), clear(d), on(b,a), on(d,table)
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=131, queue=94
+ context:
+ goal stack: clear(a), clear(c), clear(b), gripper_empty(), on(a,d), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=132, queue=97
+ context:
+ goal stack: clear(a), on(a,b), clear(c), gripper_empty(), clear(d), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(c,b) to achieve clear(c) gripper_empty()
+
+iter=133, queue=98
+ context:
+ goal stack: clear(a), on(a,c), on(b,table), clear(b), gripper_empty(), clear(d), on(d,table)
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=134, queue=98
+ context:
+ goal stack: clear(a), on(a,c), clear(b), on(b,d), gripper_empty(), on(d,table)
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=135, queue=98
+ context:
+ goal stack: on(a,c), clear(b), gripper_empty(), clear(d), on(b,a), on(d,table)
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=136, queue=98
+ context:
+ goal stack: clear(a), on(a,c), on(b,table), clear(c), clear(b), gripper_empty(), clear(d), on(d,c)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=137, queue=97
+ context:
+ goal stack: clear(a), on(a,c), clear(c), clear(b), on(b,d), gripper_empty(), on(d,c)
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+
+iter=138, queue=96
+ context:
+ goal stack: clear(a), on(a,c), clear(b), on(b,c), gripper_empty(), clear(d), on(d,c)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty() clear(d) on(d,c)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=139, queue=97
+ context:
+ goal stack: on(a,c), clear(c), clear(b), gripper_empty(), clear(d), on(b,a), on(d,c)
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=140, queue=96
+ context:
+ goal stack: on(a,c), on(d,a), clear(c), clear(b), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=141, queue=95
+ context:
+ goal stack: clear(a), on(a,c), clear(c), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=142, queue=94
+ context:
+ goal stack: on(d,b), clear(a), on(a,c), clear(c), clear(d), gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+
+iter=143, queue=93
+ context:
+ goal stack: clear(a), clear(c), clear(b), gripper_empty(), on(d,c), on(a,d)
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=144, queue=94
+ context:
+ goal stack: clear(a), on(a,b), clear(c), gripper_empty(), clear(d), on(d,c)
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+
+iter=145, queue=93
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), gripper_empty(), clear(d), on(d,c)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=146, queue=92
+ context:
+ goal stack: clear(a), on(a,c), on(b,table), clear(b), gripper_empty(), clear(d), on(d,c)
+ considering using puton(d,c) to achieve gripper_empty() clear(d) on(d,c)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=147, queue=92
+ context:
+ goal stack: clear(a), on(a,c), clear(b), on(b,d), gripper_empty(), on(d,c)
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=148, queue=92
+ context:
+ goal stack: on(a,c), clear(b), gripper_empty(), clear(d), on(b,a), on(d,c)
+ considering using puton(d,c) to achieve gripper_empty() clear(d) on(d,c)
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=149, queue=91
+ context:
+ goal stack: on(a,b), on(d,a), clear(c), clear(b), on(c,a), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+
+iter=150, queue=91
+ context:
+ goal stack: on(a,b), clear(c), clear(b), on(c,a), clear(d), gripper_empty(), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+
+iter=151, queue=90
+ context:
+ goal stack: on(a,b), clear(b), on(c,a), clear(d), gripper_empty(), on(d,c)
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+
+iter=152, queue=89
+ context:
+ goal stack: clear(a), on(d,b), on(c,b), clear(c), clear(b), gripper_empty(), on(a,d)
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+
+iter=153, queue=88
+ context:
+ goal stack: clear(a), on(d,b), on(a,c), on(c,b), clear(b), gripper_empty(), clear(d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=154, queue=87
+ context:
+ goal stack: clear(a), on(d,b), on(a,table), on(c,b), clear(c), clear(b), gripper_empty(), clear(d)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+
+iter=155, queue=86
+ context:
+ goal stack: on(a,b), on(d,a), on(c,b), clear(c), clear(b), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+
+iter=156, queue=85
+ context:
+ goal stack: clear(a), on(a,b), on(c,b), clear(c), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+
+iter=157, queue=84
+ context:
+ goal stack: clear(a), on(a,b), on(c,b), clear(b), clear(d), gripper_empty(), on(d,c)
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+
+iter=158, queue=83
+ context:
+ goal stack: clear(a), on(d,b), on(a,c), clear(b), gripper_empty(), on(c,d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=159, queue=82
+ context:
+ goal stack: on(a,b), on(d,a), clear(c), clear(b), clear(d), gripper_empty(), on(c,table)
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty() on(c,table)
+
+iter=160, queue=81
+ context:
+ goal stack: clear(a), on(a,b), clear(c), clear(b), clear(d), gripper_empty(), on(c,table), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty() on(c,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+
+iter=161, queue=80
+ context:
+ goal stack: clear(a), on(a,b), clear(b), clear(d), gripper_empty(), on(c,table), on(d,c)
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+
+iter=162, queue=79
+ context:
+ goal stack: on(a,b), on(d,a), on(c,b), clear(c), gripper_empty(), clear(d)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=163, queue=79
+ context:
+ goal stack: on(a,b), on(d,a), clear(c), clear(b), gripper_empty(), on(c,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+
+iter=164, queue=78
+ context:
+ goal stack: clear(a), on(a,b), on(d,a), on(c,b), clear(c), gripper_empty(), clear(d)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=165, queue=77
+ context:
+ goal stack: clear(a), on(a,b), on(d,a), clear(c), clear(b), gripper_empty(), on(c,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+
+iter=166, queue=76
+ context:
+ goal stack: clear(a), on(a,b), on(d,a), clear(c), clear(b), on(c,table), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+
+iter=167, queue=75
+ context:
+ goal stack: clear(a), on(a,b), on(c,b), clear(c), gripper_empty(), clear(d), on(d,table)
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=168, queue=75
+ context:
+ goal stack: clear(a), on(a,b), clear(c), clear(b), gripper_empty(), on(c,d), on(d,table)
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+
+iter=169, queue=74
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), clear(b), on(c,a), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=170, queue=76
+ context:
+ goal stack: on(a,table), clear(c), clear(b), on(c,a), clear(d), gripper_empty(), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=171, queue=77
+ context:
+ goal stack: on(a,table), clear(b), on(c,a), clear(d), gripper_empty(), on(d,c)
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=172, queue=79
+ context:
+ goal stack: on(d,a), on(c,b), on(a,table), clear(c), clear(b), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+
+iter=173, queue=78
+ context:
+ goal stack: clear(a), on(c,b), on(a,table), clear(c), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+
+iter=174, queue=77
+ context:
+ goal stack: clear(a), on(c,b), on(a,table), clear(b), clear(d), gripper_empty(), on(d,c)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+
+iter=175, queue=77
+ context:
+ goal stack: clear(a), on(d,b), on(a,c), gripper_empty(), on(c,d)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=176, queue=76
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), clear(b), clear(d), gripper_empty(), on(c,table)
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty() on(c,table)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=177, queue=77
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), clear(d), gripper_empty(), on(c,table), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty() on(c,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=178, queue=78
+ context:
+ goal stack: clear(a), on(a,table), clear(b), clear(d), gripper_empty(), on(c,table), on(d,c)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=179, queue=80
+ context:
+ goal stack: on(d,a), on(c,b), on(a,table), clear(c), gripper_empty(), clear(d)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=180, queue=80
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), clear(b), gripper_empty(), on(c,d)
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=181, queue=82
+ context:
+ goal stack: clear(a), on(d,a), on(c,b), on(a,table), clear(c), gripper_empty(), clear(d)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=182, queue=81
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(c), clear(b), gripper_empty(), on(c,d)
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=183, queue=81
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(c), clear(b), on(c,table), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=184, queue=80
+ context:
+ goal stack: on(d,a), on(a,table), on(b,table), clear(c), clear(b), gripper_empty(), clear(d)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=185, queue=82
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), clear(b), on(b,d), gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+
+iter=186, queue=84
+ context:
+ goal stack: on(d,a), on(a,table), clear(b), on(b,c), gripper_empty(), clear(d)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+
+iter=187, queue=84
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), clear(b), gripper_empty(), clear(d), on(b,a)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=188, queue=86
+ context:
+ goal stack: on(d,a), on(a,table), on(b,table), clear(b), gripper_empty(), clear(d)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,a) to achieve gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=189, queue=86
+ context:
+ goal stack: on(d,a), on(a,table), clear(b), on(b,d), gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(c,a) to achieve gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+
+iter=190, queue=85
+ context:
+ goal stack: on(d,a), on(a,table), clear(b), gripper_empty(), clear(d), on(b,a)
+ considering using puton(d,a) to achieve on(d,a) gripper_empty() clear(d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(c,a) to achieve gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=191, queue=85
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), on(b,table), clear(b), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=192, queue=84
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(b), on(b,d), gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+
+iter=193, queue=84
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(b), on(b,c), gripper_empty(), clear(d)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+
+iter=194, queue=83
+ context:
+ goal stack: clear(a), clear(b), gripper_empty(), on(a,d), on(d,table)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=195, queue=84
+ context:
+ goal stack: clear(a), on(a,b), gripper_empty(), clear(d), on(d,table)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(c,b) to achieve gripper_empty()
+
+iter=196, queue=84
+ context:
+ goal stack: clear(a), on(c,b), on(a,table), clear(c), gripper_empty(), clear(d), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=197, queue=84
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), gripper_empty(), on(c,d), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=198, queue=86
+ context:
+ goal stack: clear(a), on(a,table), on(b,table), clear(c), clear(b), gripper_empty(), clear(d), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=199, queue=86
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), on(b,d), gripper_empty(), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+
+iter=200, queue=87
+ context:
+ goal stack: clear(a), on(a,table), clear(b), on(b,c), gripper_empty(), clear(d), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+
+iter=201, queue=87
+ context:
+ goal stack: on(a,table), clear(c), clear(b), gripper_empty(), clear(d), on(b,a), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(c,a) to achieve clear(c) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=202, queue=89
+ context:
+ goal stack: clear(a), on(a,table), on(b,table), clear(b), gripper_empty(), clear(d), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=203, queue=89
+ context:
+ goal stack: clear(a), on(a,table), clear(b), on(b,d), gripper_empty(), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(c,d) to achieve gripper_empty()
+
+iter=204, queue=89
+ context:
+ goal stack: on(a,table), clear(b), gripper_empty(), clear(d), on(b,a), on(d,table)
+ considering using puton(c,table) to achieve gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(c,a) to achieve gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=205, queue=89
+ context:
+ goal stack: clear(a), clear(b), gripper_empty(), on(d,c), on(a,d)
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=206, queue=90
+ context:
+ goal stack: clear(a), on(a,b), gripper_empty(), clear(d), on(d,c)
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty() clear(d) on(d,c)
+
+iter=207, queue=89
+ context:
+ goal stack: clear(a), on(a,table), on(b,table), clear(c), clear(b), gripper_empty(), clear(d), on(d,c)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=208, queue=88
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), on(b,d), gripper_empty(), on(d,c)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+
+iter=209, queue=87
+ context:
+ goal stack: clear(a), on(a,table), clear(b), on(b,c), gripper_empty(), clear(d), on(d,c)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty() clear(d) on(d,c)
+
+iter=210, queue=88
+ context:
+ goal stack: on(a,table), clear(c), clear(b), gripper_empty(), clear(d), on(b,a), on(d,c)
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=211, queue=87
+ context:
+ goal stack: clear(a), on(a,table), on(b,table), clear(b), gripper_empty(), clear(d), on(d,c)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(d,c) to achieve gripper_empty() clear(d) on(d,c)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=212, queue=87
+ context:
+ goal stack: clear(a), on(a,table), clear(b), on(b,d), gripper_empty(), on(d,c)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+
+iter=213, queue=87
+ context:
+ goal stack: on(a,table), clear(b), gripper_empty(), clear(d), on(b,a), on(d,c)
+ considering using puton(d,c) to achieve gripper_empty() clear(d) on(d,c)
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=214, queue=86
+ context:
+ goal stack: clear(a), on(a,c), on(c,b), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=215, queue=88
+ context:
+ goal stack: clear(a), on(a,c), clear(b), holding(d), on(c,table)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=216, queue=90
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(c), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=217, queue=91
+ context:
+ goal stack: clear(a), on(a,c), clear(c), on(b,table), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=218, queue=91
+ context:
+ goal stack: clear(a), on(a,c), clear(b), holding(d), on(b,c)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=219, queue=91
+ context:
+ goal stack: clear(a), on(a,c), clear(c), clear(b), holding(d), on(b,a)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=220, queue=93
+ context:
+ goal stack: clear(a), on(a,c), on(d,a), clear(c), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=221, queue=94
+ context:
+ goal stack: clear(a), on(a,c), on(b,table), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=222, queue=94
+ context:
+ goal stack: clear(a), on(a,c), clear(b), holding(d), on(b,a)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=223, queue=95
+ context:
+ goal stack: holding(a), clear(c), clear(b), clear(d), on(b,c), on(d,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=224, queue=97
+ context:
+ goal stack: on(a,c), clear(c), clear(b), holding(d), on(b,a)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=225, queue=97
+ context:
+ goal stack: clear(a), clear(b), holding(c), on(d,table), on(a,d)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=226, queue=100
+ context:
+ goal stack: clear(a), clear(c), holding(b), clear(d), on(d,table), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=227, queue=103
+ context:
+ goal stack: clear(a), clear(b), clear(d), holding(c), on(d,table), on(a,d)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=228, queue=105
+ context:
+ goal stack: clear(a), clear(c), holding(b), on(d,table), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=229, queue=107
+ context:
+ goal stack: clear(a), on(a,b), clear(d), holding(c), on(d,table)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=230, queue=109
+ context:
+ goal stack: clear(a), on(a,b), clear(c), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=231, queue=109
+ context:
+ goal stack: holding(a), clear(c), on(b,table), clear(b), clear(d), on(d,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=232, queue=109
+ context:
+ goal stack: holding(a), clear(c), clear(b), on(b,d), on(d,table)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=233, queue=109
+ context:
+ goal stack: on(a,c), clear(b), holding(d), on(b,a)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=234, queue=109
+ context:
+ goal stack: clear(a), on(a,c), clear(c), clear(b), holding(d), on(b,c)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=235, queue=111
+ context:
+ goal stack: holding(a), clear(c), clear(b), clear(d), on(b,c), on(d,c)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=236, queue=113
+ context:
+ goal stack: clear(a), clear(c), holding(b), clear(d), on(d,c), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=237, queue=116
+ context:
+ goal stack: clear(a), clear(c), holding(b), on(d,c), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=238, queue=118
+ context:
+ goal stack: holding(a), clear(c), on(b,table), clear(b), clear(d), on(d,c)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=239, queue=118
+ context:
+ goal stack: holding(a), clear(c), clear(b), on(b,d), on(d,c)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=240, queue=118
+ context:
+ goal stack: clear(a), on(a,b), clear(c), clear(b), holding(d), on(c,a)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=241, queue=120
+ context:
+ goal stack: clear(a), on(a,b), on(c,b), clear(c), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=242, queue=120
+ context:
+ goal stack: holding(a), on(c,b), clear(c), clear(b), clear(d), on(d,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=243, queue=120
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), holding(d), on(c,a)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=244, queue=122
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), on(c,a), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=245, queue=125
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(c), on(c,a), holding(b), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=246, queue=127
+ context:
+ goal stack: on(a,table), clear(c), on(c,a), holding(b), clear(d), on(d,table)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=247, queue=130
+ context:
+ goal stack: clear(a), on(a,table), clear(c), on(c,a), holding(b), clear(d), on(d,table)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=248, queue=132
+ context:
+ goal stack: on(a,table), clear(c), on(c,a), holding(b), clear(d), on(d,c)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=249, queue=135
+ context:
+ goal stack: on(a,table), on(c,a), holding(b), clear(d), on(d,c)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=250, queue=137
+ context:
+ goal stack: clear(a), on(a,table), on(c,a), holding(b), clear(d), on(d,c)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=251, queue=139
+ context:
+ goal stack: holding(a), on(c,b), clear(b), clear(d), on(d,c)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=252, queue=139
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), holding(b), on(c,table), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=253, queue=142
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(c), holding(b), on(c,table), clear(d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=254, queue=144
+ context:
+ goal stack: holding(a), clear(c), clear(b), on(c,table), clear(d), on(d,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=255, queue=143
+ context:
+ goal stack: clear(a), on(a,table), clear(c), holding(b), on(c,table), clear(d), on(d,table)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=256, queue=146
+ context:
+ goal stack: holding(a), clear(b), on(c,table), clear(d), on(d,c)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=257, queue=147
+ context:
+ goal stack: clear(a), on(a,table), clear(c), holding(b), on(c,table), clear(d), on(d,c)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=258, queue=150
+ context:
+ goal stack: clear(a), on(a,table), holding(b), on(c,table), clear(d), on(d,c)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=259, queue=152
+ context:
+ goal stack: clear(a), on(a,table), on(c,b), clear(c), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=260, queue=152
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), holding(b), clear(d), on(c,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=261, queue=155
+ context:
+ goal stack: on(d,a), on(a,table), clear(c), holding(b), on(c,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve holding(b)
+
+iter=262, queue=157
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(c), holding(b), on(c,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=263, queue=159
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(c), holding(b), clear(d), on(c,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=264, queue=160
+ context:
+ goal stack: clear(a), on(a,table), clear(c), on(b,table), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=265, queue=160
+ context:
+ goal stack: on(d,a), on(a,table), on(b,table), clear(b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=266, queue=160
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), on(b,table), clear(b), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=267, queue=160
+ context:
+ goal stack: on(d,a), on(a,table), clear(b), on(b,d), holding(c)
+ considering using pickup(c,a) to achieve holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=268, queue=160
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(b), on(b,d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=269, queue=160
+ context:
+ goal stack: on(d,a), on(a,table), clear(b), on(b,d), clear(d), holding(c)
+ considering using pickup(c,a) to achieve holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=270, queue=162
+ context:
+ goal stack: clear(a), on(a,table), clear(b), holding(d), on(b,c)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=271, queue=162
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), holding(d), on(b,a)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=272, queue=164
+ context:
+ goal stack: on(d,a), on(a,table), clear(b), clear(d), on(b,a), holding(c)
+ considering using pickup(c,a) to achieve holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=273, queue=164
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(b), clear(d), on(b,a), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=274, queue=166
+ context:
+ goal stack: clear(a), on(a,table), on(b,table), clear(b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=275, queue=166
+ context:
+ goal stack: clear(a), on(a,table), clear(b), holding(d), on(b,a)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=276, queue=167
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(b), on(b,d), clear(d), holding(c)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=277, queue=168
+ context:
+ goal stack: clear(a), holding(b), clear(d), on(d,table), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=278, queue=170
+ context:
+ goal stack: clear(a), holding(b), on(d,table), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=279, queue=171
+ context:
+ goal stack: clear(a), on(a,b), holding(d)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=280, queue=171
+ context:
+ goal stack: holding(a), on(c,b), clear(c), clear(d), on(d,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=281, queue=171
+ context:
+ goal stack: holding(a), clear(c), clear(b), on(c,d), on(d,table)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a) clear(c)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=282, queue=171
+ context:
+ goal stack: clear(a), on(a,table), clear(c), holding(b), clear(d), on(c,d), on(d,table)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=283, queue=174
+ context:
+ goal stack: clear(a), on(a,table), clear(c), holding(b), on(c,d), on(d,table)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve clear(c) holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=284, queue=176
+ context:
+ goal stack: clear(a), on(a,table), on(b,table), clear(b), clear(d), holding(c), on(d,table)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=285, queue=176
+ context:
+ goal stack: clear(a), on(a,table), clear(b), on(b,d), holding(c), on(d,table)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=286, queue=176
+ context:
+ goal stack: clear(a), on(a,table), clear(b), on(b,d), clear(d), holding(c), on(d,table)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=287, queue=178
+ context:
+ goal stack: holding(a), clear(b), clear(d), on(b,c), on(d,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=288, queue=178
+ context:
+ goal stack: on(a,table), clear(b), clear(d), on(b,a), holding(c), on(d,table)
+ considering using pickup(c,a) to achieve holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=289, queue=178
+ context:
+ goal stack: on(a,table), clear(c), clear(b), holding(d), on(b,a)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=290, queue=178
+ context:
+ goal stack: clear(a), on(a,table), clear(b), clear(d), on(b,a), holding(c), on(d,table)
+ considering using pickup(c,a) to achieve clear(a) holding(c)
+ considering using pickup(c,b) to achieve clear(b) holding(c)
+ considering using pickup(c,d) to achieve clear(d) holding(c)
+ considering using pickup(c,table) to achieve holding(c)
+
+iter=291, queue=180
+ context:
+ goal stack: holding(a), on(b,table), clear(b), clear(d), on(d,table)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=292, queue=180
+ context:
+ goal stack: holding(a), clear(b), on(b,d), on(d,table)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=293, queue=180
+ context:
+ goal stack: on(a,table), clear(b), holding(d), on(b,a)
+ considering using pickup(d,a) to achieve holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve holding(d)
+
+iter=294, queue=180
+ context:
+ goal stack: clear(a), holding(b), clear(d), on(d,c), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b) clear(d)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=295, queue=182
+ context:
+ goal stack: clear(a), holding(b), on(d,c), on(a,d)
+ considering using pickup(b,table) to achieve holding(b)
+ considering using pickup(b,d) to achieve holding(b)
+ considering using pickup(b,c) to achieve holding(b)
+ considering using pickup(b,a) to achieve clear(a) holding(b)
+
+iter=296, queue=183
+ context:
+ goal stack: holding(a), clear(b), clear(d), on(b,c), on(d,c)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=297, queue=183
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), holding(d), on(b,c)
+ considering using pickup(d,a) to achieve clear(a) holding(d)
+ considering using pickup(d,table) to achieve holding(d)
+ considering using pickup(d,b) to achieve clear(b) holding(d)
+ considering using pickup(d,c) to achieve clear(c) holding(d)
+
+iter=298, queue=184
+ context:
+ goal stack: holding(a), on(b,table), clear(b), clear(d), on(d,c)
+ considering using pickup(a,d) to achieve holding(a) clear(d)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=299, queue=184
+ context:
+ goal stack: holding(a), clear(b), on(b,d), on(d,c)
+ considering using pickup(a,d) to achieve holding(a)
+ considering using pickup(a,c) to achieve holding(a)
+ considering using pickup(a,b) to achieve holding(a) clear(b)
+ considering using pickup(a,table) to achieve holding(a)
+
+iter=300, queue=184
+ context:
+ goal stack: on(a,c), on(d,a), on(c,b), clear(b), clear(d), gripper_empty()
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+
+iter=301, queue=183
+ context:
+ goal stack: clear(a), on(a,c), on(c,b), clear(b), clear(d), gripper_empty(), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=302, queue=182
+ context:
+ goal stack: clear(a), on(a,c), on(c,b), clear(b), clear(d), gripper_empty(), on(d,c)
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+
+iter=303, queue=183
+ context:
+ goal stack: on(a,c), on(d,a), clear(b), clear(d), gripper_empty(), on(c,table)
+ considering using puton(d,a) to achieve on(d,a) clear(d) gripper_empty()
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=304, queue=185
+ context:
+ goal stack: clear(a), on(a,c), clear(b), clear(d), gripper_empty(), on(c,table), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=305, queue=186
+ context:
+ goal stack: clear(a), on(a,c), clear(b), clear(d), gripper_empty(), on(c,table), on(d,c)
+ considering using puton(b,c) to achieve clear(b) gripper_empty()
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=306, queue=189
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), on(b,table), clear(c), clear(b), gripper_empty(), clear(d)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=307, queue=188
+ context:
+ goal stack: clear(a), on(d,a), on(a,table), clear(c), clear(b), on(b,d), gripper_empty()
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+
+iter=308, queue=187
+ context:
+ goal stack: on(d,b), clear(a), on(a,c), on(b,table), clear(c), clear(d), gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+
+iter=309, queue=186
+ context:
+ goal stack: on(d,b), clear(a), on(a,c), clear(d), gripper_empty(), on(b,c)
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+
+iter=310, queue=186
+ context:
+ goal stack: clear(a), on(a,c), clear(c), clear(b), clear(d), gripper_empty(), on(b,a), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+
+iter=311, queue=185
+ context:
+ goal stack: on(d,b), clear(a), on(a,c), clear(c), clear(d), gripper_empty(), on(b,a)
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+
+iter=312, queue=184
+ context:
+ goal stack: clear(a), on(a,c), clear(b), clear(d), gripper_empty(), on(b,a), on(d,c)
+ considering using puton(d,c) to achieve clear(d) gripper_empty() on(d,c)
+
+iter=313, queue=183
+ context:
+ goal stack: clear(a), on(a,c), on(d,a), on(b,table), clear(c), clear(b), gripper_empty(), clear(d)
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=314, queue=182
+ context:
+ goal stack: clear(a), on(a,c), on(d,a), clear(c), clear(b), on(b,d), gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+
+iter=315, queue=181
+ context:
+ goal stack: on(d,b), clear(a), on(a,c), on(b,table), clear(d), gripper_empty()
+ considering using puton(a,c) to achieve clear(a) on(a,c) gripper_empty()
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+
+iter=316, queue=181
+ context:
+ goal stack: clear(a), on(a,c), clear(b), clear(d), gripper_empty(), on(b,a), on(d,table)
+ considering using puton(d,table) to achieve clear(d) gripper_empty() on(d,table)
+
+iter=317, queue=180
+ context:
+ goal stack: on(d,b), clear(a), on(a,c), clear(d), gripper_empty(), on(b,a)
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+
+iter=318, queue=179
+ context:
+ goal stack: clear(a), clear(c), clear(b), gripper_empty(), on(b,c), on(a,d), on(d,table)
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+
+iter=319, queue=178
+ context:
+ goal stack: clear(a), on(a,b), clear(c), gripper_empty(), on(b,c), clear(d), on(d,table)
+ considering using puton(a,b) to achieve clear(a) on(a,b) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+
+iter=320, queue=178
+ context:
+ goal stack: clear(a), on(a,table), clear(c), clear(b), gripper_empty(), on(b,c), clear(d), on(d,table)
+ considering using puton(a,table) to achieve clear(a) on(a,table) gripper_empty()
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+
+iter=321, queue=177
+ context:
+ goal stack: on(d,b), on(a,c), clear(c), clear(d), gripper_empty(), on(b,a)
+ considering using puton(d,b) to achieve on(d,b) clear(d) gripper_empty()
+
+iter=322, queue=176
+ context:
+ goal stack: clear(c), clear(b), on(c,a), gripper_empty(), on(a,d), on(d,table)
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=323, queue=178
+ context:
+ goal stack: clear(a), on(c,b), clear(c), gripper_empty(), on(a,d), on(d,table)
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=324, queue=177
+ context:
+ goal stack: clear(a), clear(c), clear(b), gripper_empty(), on(c,d), on(a,d), on(d,table)
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty() on(c,d)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=325, queue=179
+ context:
+ goal stack: clear(a), clear(c), clear(b), on(c,table), gripper_empty(), on(a,d), on(d,table)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=326, queue=180
+ context:
+ goal stack: clear(a), on(b,table), clear(c), clear(b), gripper_empty(), clear(d), on(a,d), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=327, queue=180
+ context:
+ goal stack: clear(a), clear(c), clear(b), on(b,d), gripper_empty(), on(a,d), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(b,d) to achieve clear(b) on(b,d) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+
+iter=328, queue=182
+ context:
+ goal stack: clear(a), clear(b), on(b,c), gripper_empty(), clear(d), on(a,d), on(d,table)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+
+iter=329, queue=181
+ context:
+ goal stack: clear(c), clear(b), gripper_empty(), clear(d), on(b,a), on(a,d), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=330, queue=182
+ context:
+ goal stack: clear(c), clear(b), on(c,a), gripper_empty(), clear(d), on(a,d), on(d,table)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty()
+
+iter=331, queue=182
+ context:
+ goal stack: clear(a), on(c,b), clear(c), gripper_empty(), clear(d), on(a,d), on(d,table)
+ considering using puton(c,b) to achieve on(c,b) clear(c) gripper_empty()
+
+iter=332, queue=181
+ context:
+ goal stack: clear(a), clear(c), clear(b), on(c,table), gripper_empty(), clear(d), on(a,d), on(d,table)
+ considering using puton(c,table) to achieve clear(c) on(c,table) gripper_empty()
+ considering using puton(b,table) to achieve clear(b) gripper_empty()
+
+iter=333, queue=180
+ context:
+ goal stack: clear(a), on(b,table), clear(c), clear(b), gripper_empty(), on(a,d), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+ considering using puton(b,table) to achieve on(b,table) clear(b) gripper_empty()
+
+iter=334, queue=180
+ context:
+ goal stack: clear(a), clear(b), on(b,c), gripper_empty(), on(a,d), on(d,table)
+ considering using puton(a,d) to achieve clear(a) gripper_empty() on(a,d)
+ considering using puton(b,c) to achieve clear(b) on(b,c) gripper_empty()
+
+iter=335, queue=179
+ context:
+ goal stack: clear(c), clear(b), gripper_empty(), on(b,a), on(a,d), on(d,table)
+ considering using puton(c,table) to achieve clear(c) gripper_empty()
+ considering using puton(c,a) to achieve clear(c) gripper_empty()
+ considering using puton(c,d) to achieve clear(c) gripper_empty()
+ considering using puton(b,a) to achieve clear(b) gripper_empty() on(b,a)
+
+iter=336, queue=180
+ context:
+ goal stack: on(a,b), clear(c), on(c,a), gripper_empty(), clear(d), on(d,table)
+ considering using puton(d,table) to achieve gripper_empty() clear(d) on(d,table)
+ considering using puton(c,a) to achieve clear(c) on(c,a) gripper_empty()
+
+iter=337, queue=180
+solution found!
+plan;
+puton(a,d)
+pickup(a,c)
+puton(d,b)
+pickup(d,table)
+puton(a,c)
+pickup(a,b)
+puton(c,table)
+pickup(c,d)
+-------------------------------------------------

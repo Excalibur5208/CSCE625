@@ -1,0 +1,7 @@
+clear(a)
+on(a,b)
+on(b,table)
+clear(c)
+on(c,d)
+on(d,table)
+gripper_empty()
